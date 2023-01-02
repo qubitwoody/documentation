@@ -48,6 +48,8 @@ libvirtd
     
     scp /var/lib/libvirt/images/24GBMSA.qcow2 root@10.10.10.11:/var/lib/libvirt/images/
     
+    systemctl restart libvirtd
+    
     virt-clone --original 24GBMSA --name 24GBMSA-zabbix --file /var/lib/libvirt/images/24GBMSA-zabbix.qcow2
 
     
