@@ -49,19 +49,20 @@
 
 ## 2. Clone
 
-### 2.1 Generating uuid for new mysql
+
+### 2.1 Clone
+
+    virt-clone --original 24GBMSA --name mysql --file /var/lib/libvirt/images/mysql.qcow2
+
+### 2.2 Generating uuid for new mysql
 
     uuidgen
     
     1b58f12d-5fec-11ed-bc07-000c29f03601
 
-### 2.2 Edit
+### 2.3 Edit
 
     vi /var/lib/mysql/auto.cnf
     
     [auto]
     server-uuid=1b58f12d-5fec-11ed-bc07-000c29f03601
-
-### 2.3 Clone
-
-    virt-clone --original 24GBMSA --name mysql --file /var/lib/libvirt/images/mysql.qcow2
