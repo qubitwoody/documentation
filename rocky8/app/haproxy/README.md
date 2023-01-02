@@ -41,8 +41,12 @@ haproxy-2.6.7.tar.gz
     
     touch /var/lib/haproxy/stats
     
-    
-### 2.3.2 Register service
+
+### 2.3.2 Config check haproxy
+
+    /usr/local/sbin/haproxy -f /etc/haproxy/haproxy.cfg -c
+
+### 2.3.3 Register service
     
     vi /usr/lib/systemd/system/haproxy.service
     
