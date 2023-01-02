@@ -2,13 +2,13 @@
 Nginx conf
 
 
-## 0. Install
+## 0. Preconfig
 
 ### 0.1 Create for nginx.repo
 
     vi /etc/yum.repos.d/nginx.repo
     
-### 0.2 Edit
+### 0.2 Edit for nginx.repo
 
     [nginx]
     name=nginx repo
