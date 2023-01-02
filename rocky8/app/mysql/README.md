@@ -49,7 +49,7 @@
 
 ## 2. Clone
 
-### 2.1 Preconfig
+### 2.1 Generating uuid for new mysql
 
     uuidgen
     
