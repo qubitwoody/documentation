@@ -47,6 +47,8 @@ libvirtd
     scp /etc/libvirt/qemu/24GBMSA.xml root@10.10.10.11:/etc/libvirt/qemu/
     
     scp /var/lib/libvirt/images/24GBMSA.qcow2 root@10.10.10.11:/var/lib/libvirt/images/
+    
+    virt-clone --original 24GBMSA --name 24GBMSA-zabbix --file /var/lib/libvirt/images/24GBMSA-zabbix.qcow2
 
     
     
