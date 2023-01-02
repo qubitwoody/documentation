@@ -6,8 +6,6 @@ named.conf
 ### 1.1 Install
 
     dnf -y install bind bind-utils
-    
-    dnf module install nginx:1.20
             
 ### 1.2 Edit named.conf
 
@@ -20,8 +18,6 @@ named.conf
 ### 1.3 Testing
 
     dig www.naver.com
-    
-    
     
 ### 1.4 setting rules to firewalld
 
