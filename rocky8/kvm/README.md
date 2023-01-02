@@ -3,7 +3,7 @@ libvirtd
 
 ## 1. Install
 
-### 1.1 Install nginx
+### 1.1 Install
 
     dnf -y install qemu-kvm libvirt virt-install
     
