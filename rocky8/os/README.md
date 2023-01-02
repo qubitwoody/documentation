@@ -25,9 +25,14 @@ rocky8
 
     systemctl enable --now cockpit.socket
     
+### 0.4 sudoers
+
+    cp -f /etc/sudoers /etc/sudoers.bak
     
-
-
+    awk 'NR==102{print "user        ALL=(ALL)       NOPASSWD: ALL"}104' /etc/sudoers.bak > /etc/sudoers
+    
+    cat /etc/sudoers | grep user
+    
 
 ## 1. Basic config
 
