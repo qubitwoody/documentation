@@ -48,7 +48,7 @@
     semanage port -a -t redis_port_t -p tcp 16381
 
 
-### 3.2 Firealld
+### 3.2 Firewalld
 
     firewall-cmd --add-port=6381/tcp
     
