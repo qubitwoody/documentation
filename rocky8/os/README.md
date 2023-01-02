@@ -20,6 +20,15 @@ rocky8
     export http_proxy=http://172.16.10.20:3128
     export https_proxy=http://172.16.10.20:3128
 
+
+### 0.3 cockpit
+
+    systemctl enable --now cockpit.socket
+    
+    
+
+
+
 ## 1. Basic config
 
 ### 1.1 Chrony
