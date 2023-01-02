@@ -3,7 +3,7 @@ rocky8
 
 ## 0. Disable IPv6
 
-### 0.1 
+### 0.1 Edit grub
 
     vi /etc/default/grub
     
