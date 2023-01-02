@@ -77,7 +77,11 @@ haproxy-2.6.7.tar.gz
     <protocol value="vrrp"/>
     <accept/>
     </rule>
+ 
+ ### 3.3 Restart
     
+    systemctl restart firewalld
+ 
  ### 9.1 TESTING
     
     systemctl status systemd-tmpfiles-setup.service
