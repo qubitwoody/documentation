@@ -43,6 +43,8 @@
 ### 1.7 setting rules to firewalld
 
     firewall-cmd --add-service=mysql
+    firewall-cmd --permanent --zone=public --add-port=3306/tcp
+    firewall-cmd --permanent --zone=public --add-port=33061/tcp
     
     firewall-cmd --runtime-to-permanent
 
