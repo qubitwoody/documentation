@@ -1,9 +1,9 @@
 # OS
 rocky8
 
-## 0. Disable IPv6
+## 0. Preconfig
 
-### 0.1 Edit grub
+### 0.1 Disable IPv6
 
     vi /etc/default/grub
     
@@ -13,7 +13,14 @@ rocky8
 
     reboot
 
-## 1. Preconfig
+### 0.2 Proxy
+
+    vi /etc/profile.d/pproxy.sh 
+    
+    export http_proxy=http://172.16.10.20:3128
+    export https_proxy=http://172.16.10.20:3128
+
+## 1. Basic config
 
 ### 1.1 Chronyd
 
