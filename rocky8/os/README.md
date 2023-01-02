@@ -25,6 +25,8 @@ rocky8
 
     systemctl enable --now cockpit.socket
     
+    https://10.10.10.10:9090/
+    
 ### 0.4 sudoers
 
     cp -f /etc/sudoers /etc/sudoers.bak
