@@ -62,12 +62,6 @@ haproxy-2.6.7.tar.gz
     
     systemctl enable --now keepalived
     
- ### 2.5 Set up keepalived
-
-    tar xvzf haproxy-2.6.7.tar.gz
-    
-    
-    
  ### 9.1 TESTING
     
     systemctl status systemd-tmpfiles-setup.service
