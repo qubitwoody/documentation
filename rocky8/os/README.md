@@ -93,22 +93,25 @@ rocky8
     
     ansible --version
 
-### 3.2 Basic command
+### 3.2.1 config
 
     vi /etc/ansible/ansible.cfg
     
     host_key_checking = False
     
+### 3.2.2 edit hosts
+
     vi /etc/ansible/hosts
     
     [target_servers]
     10.0.0.51
     10.0.0.52
     
+### 3.2.3 Basic command
+    
     ansible all --list-hosts
     
     ansible target_servers --list-hosts
-
 
 ## 9. Check
     
