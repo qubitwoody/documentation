@@ -1,6 +1,21 @@
 # Nginx
 Nginx conf
 
+
+## 0. Install
+
+### 0.1 Create for nginx.repo
+
+    vi /etc/yum.repos.d/nginx.repo
+    
+### 0.2 Edit
+
+    [nginx]
+    name=nginx repo
+    baseurl=http://nginx.org/packages/mainline/centos/8/$basearch/
+    gpgcheck=0
+    enabled=1
+    
 ## 1. Install
 
 ### 1.1 Install nginx
