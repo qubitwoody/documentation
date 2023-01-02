@@ -20,6 +20,8 @@ libvirtd
 
 ### 1.3 Basic command
 
+    virsh --help
+    
     virsh list
     
     virsh list --all
@@ -29,12 +31,13 @@ libvirtd
     virsh start rocky8 --console
     
     virsh shutdown rocky8
-    
-    virsh destroy rocky8
-    
+       
     virsh autostart rocky8
     
     virsh autostart --disable rocky8
+    
+    virsh undefine rocky8
+    rm -rf /var/lib/libvirt/images/rocky8.qcow2
 
 ## 2. Clone
 
