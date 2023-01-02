@@ -11,6 +11,8 @@ rocky8
     
     grub2-mkconfig -o /boot/grub2/grub.cfg
 
+    reboot
+
 ## 1. Preconfig
 
 ### 1.1 Chronyd
