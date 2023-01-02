@@ -26,6 +26,7 @@ Nginx conf
             
 ### 1.2 make directories
 
+    su - username
     mkdir cdn repo
 
 ### 1.3 run nginx
