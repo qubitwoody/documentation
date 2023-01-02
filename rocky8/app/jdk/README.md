@@ -20,3 +20,11 @@ OPEN JDK
     alternatives --config java
     
     alternatives --config javac
+
+## 2. Packages
+
+### 2.1 compate openssl10
+
+    openssl version -a
+    
+    dnf install compat-openssl10
