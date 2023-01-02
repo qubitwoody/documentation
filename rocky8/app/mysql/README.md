@@ -41,7 +41,7 @@
 ### 1.7 Setting rules to firewalld
 
     firewall-cmd --permanent --zone=public --add-port=3306/tcp
-    firewall-cmd --permanent --zone=public --add-port=33061/tcp
+    firewall-cmd --permanent --zone=public --add-port=33060/tcp
     
     firewall-cmd --runtime-to-permanent
     firewall-cmd --reload
