@@ -17,11 +17,10 @@ Nginx conf
 
     systemctl enable --now nginx
     
-### 1.4 register firewalld
+### 1.4 setting rules to firewalld
 
     firewall-cmd --add-service=http
     
     firewall-cmd --add-service=https
     
     firewall-cmd --runtime-to-permanent
-    
