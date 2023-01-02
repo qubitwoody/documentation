@@ -36,6 +36,12 @@ rocky8
 
 ## 1. Basic config
 
+### 1.0 packages
+
+    dnf -y install wget net-tools telnet bind-utils zip unzip tar tcpdump lsof nc chrony
+    
+    dnf -y install policycoreutils-python-utils epel-release
+
 ### 1.1 Chrony
 
     dnf -y install chrony
