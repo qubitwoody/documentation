@@ -113,6 +113,12 @@ rocky8
     
     ansible target_servers --list-hosts
 
+### 3.3 Make and copy key
+    
+    ssh-keygen -t rsa
+    
+    ssh-copy-id root@10.0.0.51
+
 ## 9. Check
     
 ### 9.1 systemd-tmpfiles-setup.service
