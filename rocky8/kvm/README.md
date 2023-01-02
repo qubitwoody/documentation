@@ -28,7 +28,7 @@ libvirtd
     
     virsh start rocky8
     
-    virsh start rocky8 --console
+    virsh console rocky8
     
     virsh shutdown rocky8
        
