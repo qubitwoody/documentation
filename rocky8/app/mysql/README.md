@@ -39,15 +39,17 @@
     systemctl status mysqld
     systemctl restart mysqld
 
+### 1.7 Check character set
 
-### 1.7 setting rules to firewalld
+    systemctl status mysqld
+    systemctl restart mysqld
 
-    firewall-cmd --add-service=mysql
-    firewall-cmd --permanent --zone=public --add-port=3306/tcp
-    firewall-cmd --permanent --zone=public --add-port=33061/tcp
+
+### 1.8 setting rules to firewalld
+
+    mysql -p
     
-    firewall-cmd --runtime-to-permanent
-
+    mysql> show variables like 'char%';p
 
 ## 2. Clone
 
