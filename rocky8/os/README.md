@@ -1,6 +1,16 @@
 # OS
 rocky8
 
+## 0. Disable IPv6
+
+### 0.1 
+
+    vi /etc/default/grub
+    
+    ipv6.disable=1
+    
+    grub2-mkconfig -o /boot/grub2/grub.cfg
+
 ## 1. Preconfig
 
 ### 1.1 Chronyd
