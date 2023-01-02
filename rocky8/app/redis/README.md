@@ -80,3 +80,15 @@
     redis-cli --cluster check 10.10.10.50:6381
     
     redis-cli -c -h 10.10.10.50 -p 6381 CLUSTER NODES
+    
+    systemctl restart redis
+
+### 5.2 Testing
+
+    redis-cli -h 10.10.10.50 -p 6381
+    
+    redis-cli -h 10.10.10.51 -p 6381
+    
+    redis-cli -h 10.10.10.52 -p 6381
+    
+    redis-cli -c -h 10.10.10.50 -p 6381 CLUSTER NODES
