@@ -22,11 +22,11 @@ rocky8
 
 ## 1. Basic config
 
-### 1.1 Chronyd
+### 1.1 Chrony
 
     dnf -y install chrony
     
-    vi /etc/chronyd.conf
+    vi /etc/chrony.conf
     
     systemctl enable --now chronyd
             
