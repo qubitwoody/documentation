@@ -45,3 +45,20 @@
     firewall-cmd --add-service=mysql
     
     firewall-cmd --runtime-to-permanent
+
+
+## 2. Clone
+
+### 2.1 Preconfig
+
+    uuidgen
+    
+    server-uuid=
+
+### 2.2 Edit
+
+    vi /var/lib/mysql/auto.cnf
+    
+    [auto]
+    server-uuid=server-uuid=
+
