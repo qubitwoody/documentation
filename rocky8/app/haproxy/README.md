@@ -58,7 +58,7 @@ haproxy-2.6.7.tar.gz
 
     dnf -y install keepalived
     
-    vi /etc/keepalived.conf
+    vi /etc/keepalived/keepalived.conf
     
     systemctl enable --now keepalived
     
