@@ -1,7 +1,7 @@
 # Nginx conf
 Nginx conf
 
-## 1. Install Logstash
+## 1. Install
 
 ### 1.1 Install nginx
 
@@ -9,4 +9,6 @@ Nginx conf
     
     dnf module install nginx:1.20
             
-### 1.2 Install Logstash
+### 1.2 make directories
+
+    mkdir cdn repo
