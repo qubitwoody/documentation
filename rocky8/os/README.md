@@ -49,7 +49,7 @@ rocky8
     
     systemctl enable --now zabbix-agent2
 
-### 1.4.1 Zabbix Agent Selinux
+### 1.4.2 Zabbix Agent Selinux
 
     dnf install checkpolicy
     
