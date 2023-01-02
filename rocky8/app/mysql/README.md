@@ -53,12 +53,11 @@
 
     uuidgen
     
-    server-uuid=
+    1b58f12d-5fec-11ed-bc07-000c29f03601
 
 ### 2.2 Edit
 
     vi /var/lib/mysql/auto.cnf
     
     [auto]
-    server-uuid=server-uuid=
-
+    server-uuid=1b58f12d-5fec-11ed-bc07-000c29f03601
