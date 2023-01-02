@@ -93,13 +93,13 @@ rocky8
     
     ansible --version
 
-### 3.2.1 config
+### 3.2.1 Config
 
     vi /etc/ansible/ansible.cfg
     
     host_key_checking = False
     
-### 3.2.2 edit hosts
+### 3.2.2 Edit hosts
 
     vi /etc/ansible/hosts
     
