@@ -11,12 +11,17 @@ named.conf
 
     vi /etc/named.conf
     
-    systemctl enable --now named
+    mkdir /var/named/log/
+    touch /var/named/log/query.log
+    chown -R named:named /var/named/log/
     
+    systemctl enable --now named
     systemctl restart named
 
 ### 1.3 Testing
 
+    tail -f /var/named/log/query.log
+    
     dig www.naver.com
     
 ### 1.4 setting rules to firewalld
