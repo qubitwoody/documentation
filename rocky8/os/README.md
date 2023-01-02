@@ -85,29 +85,29 @@ rocky8
     
 ### 3.1 Install
 
-   dnf -y install epel-release
+    dnf -y install epel-release
     
-   dnf -y install python3 python3-pip
-   
-   pip3 install ansible
-   
-   ansible --version
+    dnf -y install python3 python3-pip
+    
+    pip3 install ansible
+    
+    ansible --version
 
 ### 3.2 Basic command
 
-   vi /etc/ansible/ansible.cfg
-   
-   host_key_checking = False
+    vi /etc/ansible/ansible.cfg
     
-   vi /etc/ansible/hosts
-   
-   [target_servers]
-   10.0.0.51
-   10.0.0.52
-   
-   ansible all --list-hosts
-   
-   ansible target_servers --list-hosts
+    host_key_checking = False
+    
+    vi /etc/ansible/hosts
+    
+    [target_servers]
+    10.0.0.51
+    10.0.0.52
+    
+    ansible all --list-hosts
+    
+    ansible target_servers --list-hosts
 
 
 ## 9. Check
