@@ -1,4 +1,4 @@
-# Nginx conf
+# Nginx
 Nginx conf
 
 ## 1. Install
