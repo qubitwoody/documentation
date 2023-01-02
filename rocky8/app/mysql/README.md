@@ -61,3 +61,7 @@
     
     [auto]
     server-uuid=1b58f12d-5fec-11ed-bc07-000c29f03601
+
+### 2.3 Clone
+
+    virt-clone --original 24GBMSA --name mysql --file /var/lib/libvirt/images/mysql.qcow2
