@@ -18,15 +18,7 @@
     mysql -p
     
 
-### 1.4 vi /etc/my.cnf.d/mysql-server.cnf
-
-    firewall-cmd --add-service=http
-    
-    firewall-cmd --add-service=https
-    
-    firewall-cmd --runtime-to-permanent
-
-### 1.5 vi /etc/my.cnf.d/charset.cnf
+### 1.4 vi /etc/my.cnf.d/charset.cnf
 
     [mysqld]
     character-set-server = utf8mb4
@@ -34,22 +26,25 @@
     [client]
     default-character-set = utf8mb4
 
-### 1.6 Restart
+### 1.5 Restart
 
     systemctl status mysqld
     systemctl restart mysqld
 
-### 1.7 Check character set
-
-    systemctl status mysqld
-    systemctl restart mysqld
-
-
-### 1.8 setting rules to firewalld
+### 1.6 Check character set
 
     mysql -p
     
     mysql> show variables like 'char%';p
+
+
+### 1.7 Setting rules to firewalld
+
+    firewall-cmd --permanent --zone=public --add-port=3306/tcp
+    firewall-cmd --permanent --zone=public --add-port=33061/tcp
+    
+    firewall-cmd --runtime-to-permanent
+    firewall-cmd --reload
 
 ## 2. Clone
 
