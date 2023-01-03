@@ -6,7 +6,17 @@ if [[ x$U == "x" ]];then
   echo "should get super user permition with ( sudo -i )"
   exit 1
 fi
- 
+
+## sysadmin 계정 sudo 권한
+TARGET=/etc/sudoers
+CHECK=$(grep -n ^sysadmin $TARGET)
+cp -f $TARGET $TARGET.bak
+if [[ -n $CHECK ]];then
+  awk 'NR==102{print "sysadmin        ALL=(ALL)       NOPASSWD: ALL"}104' $TARGET.bak > $TARGET
+  echo $CHECK
+fi
+unset TARGET CHECK
+
 ## root 계정의 원격 접속 제한
 TARGET=/etc/ssh/sshd_config
 CHECK=$(grep -n ^PermitRootLogin $TARGET)
