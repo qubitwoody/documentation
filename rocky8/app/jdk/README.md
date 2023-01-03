@@ -32,3 +32,9 @@ OPEN JDK
     openssl version -a
     
     dnf -y install compat-openssl10
+
+## 3. Remove
+
+### 3.1 Remove jdk-8
+
+    dnf remove java-1.8.0-openjdk java-1.8.0-openjdk-devel java-1.8.0-openjdk-headless
