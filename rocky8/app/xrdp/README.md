@@ -11,7 +11,7 @@ xddp from EPEL
 
     systemctl enable xrdp --now
     
-### 1.3 Setting up for firewalld
+### 1.3 Setting rules to firewalld
 
     firewall-cmd --add-port=3389/tcp
     
