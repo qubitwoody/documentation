@@ -23,8 +23,12 @@ OPEN JDK
 
 ## 2. Packages
 
-### 2.1 compate openssl10
+### 2.1 Groupinstall for Development Tools
+
+    dnf -y groupinstall 'Development Tools'
+
+### 2.2 compate openssl10
 
     openssl version -a
     
-    dnf install compat-openssl10
+    dnf -y install compat-openssl10
