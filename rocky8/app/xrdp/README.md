@@ -9,7 +9,7 @@ xddp from EPEL
             
 ### 1.2 Run
 
-    systemctl enable xrdp --now
+    systemctl enable --now xrdp
     
 ### 1.3 Setting rules to firewalld
 
