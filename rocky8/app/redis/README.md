@@ -43,16 +43,16 @@
 
     dnf -y install policycoreutils-python-utils
     
-    semanage port -a -t redis_port_t -p tcp 6381
+    semanage port -a -t redis_port_t -p tcp 6379
     
-    semanage port -a -t redis_port_t -p tcp 16381
+    semanage port -a -t redis_port_t -p tcp 16379
 
 
 ### 3.2 Firewalld
 
-    firewall-cmd --add-port=6381/tcp
+    firewall-cmd --add-port=6379/tcp
     
-    firewall-cmd --add-port=16381/tcp
+    firewall-cmd --add-port=16379/tcp
     
     firewall-cmd --runtime-to-permanent
 
@@ -75,23 +75,23 @@
 
 ### 5.1 Create
 
-    redis-cli --cluster create 10.10.10.50:6381 10.10.10.51:6381 10.10.10.52:6381
+    redis-cli --cluster create 10.10.10.50:6379 10.10.10.51:6379 10.10.10.52:6379
     
-    redis-cli --cluster check 10.10.10.50:6381
+    redis-cli --cluster check 10.10.10.50:6379
     
-    redis-cli -c -h 10.10.10.50 -p 6381 CLUSTER NODES
+    redis-cli -c -h 10.10.10.50 -p 6379 CLUSTER NODES
     
     systemctl restart redis
 
 ### 5.2 Testing
 
-    redis-cli -h 10.10.10.50 -p 6381
+    redis-cli -h 10.10.10.50 -p 6379
     
-    redis-cli -h 10.10.10.51 -p 6381
+    redis-cli -h 10.10.10.51 -p 6379
     
-    redis-cli -h 10.10.10.52 -p 6381
+    redis-cli -h 10.10.10.52 -p 6379
     
-    redis-cli -c -h 10.10.10.50 -p 6381 CLUSTER NODES
+    redis-cli -c -h 10.10.10.50 -p 6379 CLUSTER NODES
 
 ### X. References
 
