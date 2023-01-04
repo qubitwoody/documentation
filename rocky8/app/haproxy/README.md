@@ -82,11 +82,18 @@ haproxy-2.6.7.tar.gz
     
     systemctl restart firewalld
  
+ 
+ ## 4. Options
+ 
+ ### 4.1 Connect to unsecure backend server
+     
+    server mybackendserver 127.0.0.1:433 ssl verify none
+ 
  ### 9.1 TESTING
     
     systemctl status systemd-tmpfiles-setup.service
     
     
-### X. References
+## X. References
 
     https://
