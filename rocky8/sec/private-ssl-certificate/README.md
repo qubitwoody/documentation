@@ -11,11 +11,11 @@
 
     vi rootca_openssl.conf
     
-### 1.3 Crate CSR for Root CA
+### 1.3 Create CSR for Root CA
 
     openssl req -new -key plura-rootca.key -out plura-rootca.csr -pluraig rootca_openssl.plura
     
-### 1.4 Crate self-singed for 10 years
+### 1.4 Create self-singed for 10 years
 
     openssl x509 -req -days 3670 -extensions v3_ca -set_serial 1 -in plura-rootca.csr -signkey plura-rootca.key -out plura-rootca.crt -extfile rootca_openssl.plura
     
@@ -40,11 +40,11 @@
 
     vi host_openssl.conf
     
-### 2.4 Crate CSR
+### 2.4 Create CSR
 
     openssl req -new -key plura.io.key -out plura.io.csr -config host_openssl.conf
     
-### 2.5 Crate self-singed for 10 years
+### 2.5 Create self-singed for 10 years
 
     openssl x509 -req -days 3670 -extensions v3_user -in plura.io.csr -CA plura-rootca.crt -CAcreateserial -CAkey  plura-rootca.key -out plura.io.crt  -extfile host_openssl.conf
     
