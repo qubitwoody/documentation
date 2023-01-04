@@ -22,6 +22,8 @@
     openssl genrsa -aes256 -out plura-rootca.key 2048
     
 ### 1.2 Edit rootca_openssl.conf
+
+    vi rootca_openssl.conf
     
 ### 1.3 Crate CSR for Root CA
 
