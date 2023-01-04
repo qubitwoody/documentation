@@ -62,7 +62,7 @@ haproxy-2.6.7.tar.gz
     
     systemctl enable --now keepalived
 
-### 3. Setting rules to firewalld
+## 3. Setting rules to firewalld
 
 ### 3.1 vi /etc/firewalld/zones/trusted.xml
     
