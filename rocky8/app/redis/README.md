@@ -92,6 +92,19 @@
     redis-cli -h 10.10.10.52 -p 6379
     
     redis-cli -c -h 10.10.10.50 -p 6379 CLUSTER NODES
+    
+    redis-cli --cluster check 10.10.10.50:6379
+
+### 5.3 Reset
+
+    redis-cli -h 10.10.10.50 -p 6379
+    > flushall
+    
+    redis-cli -h 10.10.10.51 -p 6379
+    > flushall
+    
+    redis-cli -h 10.10.10.52 -p 6379
+    > flushall
 
 ### X. References
 
