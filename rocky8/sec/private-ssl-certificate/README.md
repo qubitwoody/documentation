@@ -52,7 +52,15 @@
 
     openssl x509 -text -in plura.io.crt
 
-### X. References
+## 3. Merge
+
+### 3.1 Make a pem file for Haproxy SSL
+
+    cat plura.io.key plura.io.crt > plura.io.pem
+    
+    cat plura.io.pem
+
+## X. References
 
     https://www.lesstif.com/system-admin/openssl-root-ca-ssl-6979614.html
     
