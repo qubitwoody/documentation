@@ -51,3 +51,9 @@
 ### 2.6 verification
 
     openssl x509 -text -in plura.io.crt
+
+### X. References
+
+    https://www.lesstif.com/system-admin/openssl-root-ca-ssl-6979614.html
+    
+    
