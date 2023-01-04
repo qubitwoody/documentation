@@ -39,7 +39,7 @@
 
 ## 3. Selinux & Firewalld
 
-### 3.1 Selinux
+### 3.1 Selinux (generally unnecessary)
 
     dnf -y install policycoreutils-python-utils
     
