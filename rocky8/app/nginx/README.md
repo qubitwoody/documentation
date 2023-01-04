@@ -40,3 +40,10 @@ Nginx conf
     firewall-cmd --add-service=https
     
     firewall-cmd --runtime-to-permanent
+
+## 2. Selinx
+
+### 2.1 Setup
+
+    chmod -R 755 /home
+    chcon -R -t httpd_sys_content_t /home/users/
