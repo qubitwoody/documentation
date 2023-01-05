@@ -24,12 +24,16 @@ main.conf
 
     mail.*  /var/log/maillog
 
-### 1.6 Run rsyslog
+### 1.6 Check config
+     
+    rsyslogd -N 1
+
+### 1.7 Run rsyslog
      
     systemctl enable --now rsyslog
     systemctl restart rsyslog
 
-### 1.7 Run postfix
+### 1.8 Run postfix
      
     systemctl enable --now postfix
     systemctl restart postfix
