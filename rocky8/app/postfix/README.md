@@ -48,6 +48,7 @@ main.conf
 
 ### 2.2 Sendmail
 
+    
     echo "test email" | mailx -s "Test email from Postfix MailServer" -r from@mail to@mail
 
 ### 2.3 Check logging
