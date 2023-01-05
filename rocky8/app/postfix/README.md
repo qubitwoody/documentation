@@ -34,18 +34,28 @@ main.conf
      
     systemctl enable --now postfix
     systemctl restart postfix
-
-### 1.8 Testing
-
-    tail -f /var/log/maillog
-    
-    postconf -n
     
 ### 1.9 setting rules to firewalld
 
     firewall-cmd --add-service=smtp
     
     firewall-cmd --runtime-to-permanent
+
+## 2. Testing
+
+### 2.1 Check config
+    
+    postconf -n
+
+### 2.2 Sendmail
+
+    echo "test email" | mailx -s "Test email from Postfix MailServer" -r qubitsec@gmail.com
+
+### 2.3 Check logging
+
+    tail -f /var/log/maillog
+
+
 
 ## X. Referencs
 
