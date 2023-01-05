@@ -63,5 +63,7 @@
 ## X. References
 
     https://www.lesstif.com/system-admin/openssl-root-ca-ssl-6979614.html
+    https://qubitsec.github.io/ko_plura_root_ca.html
+    
     
     
