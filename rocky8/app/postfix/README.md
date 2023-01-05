@@ -19,7 +19,6 @@ main.conf
 ### 1.4 Install rsyslog
      
     dnf -y install rsyslog
-    systemctl enable --now rsyslog
     
 ### 1.5 Edit vi /etc/rsyslog.conf
 
