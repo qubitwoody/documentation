@@ -23,6 +23,8 @@ named.conf
     touch /var/log/named_query.log
     chmod a+w /var/log/named_query.log
     
+    restorecon -v /var/log/named*
+    
     systemctl enable --now named
     systemctl restart named
     systemctl status named
