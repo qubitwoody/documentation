@@ -20,16 +20,16 @@ named.conf
 
 ### 1.4 Config for logging
     
-    mkdir /var/named/log/
-    touch /var/named/log/query.log
-    chown -R named:named /var/named/log/
+    touch /var/log/named_query.log
+    chmod a+w /var/log/named_query.log
     
     systemctl enable --now named
     systemctl restart named
+    systemctl status named
 
 ### 1.5 Testing
 
-    tail -f /var/named/log/query.log
+    tail -f /var/log/named_query.log
     
     dig www.naver.com
     
