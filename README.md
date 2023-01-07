@@ -1,1 +1,1 @@
-# PLURA Installation Documentation on Rocky Linux 8
+# Installing PLURA on Rocky Linux 8
