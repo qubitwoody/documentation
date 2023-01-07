@@ -152,6 +152,6 @@ rocky8
 
     grep -c processor /proc/cpuinfo
 
-### X. References
+## X. References
 
     https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
