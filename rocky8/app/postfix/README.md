@@ -35,7 +35,7 @@ main.conf
     
 ### 1.8 setting rules to firewalld
 
-    firewall-cmd --add-service=smtp
+    firewall-cmd --zone=trusted --add-service=smtp
     
     firewall-cmd --runtime-to-permanent
 
