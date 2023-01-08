@@ -103,6 +103,19 @@ rocky8
     
     firewall-cmd --reload
     
+### 2.2 specific
+
+    firewall-cmd --zone=public --list-all
+    
+    firewall-cmd --permanent --zone=trusted --add-interface=ens192
+    
+    firewall-cmd --permanent --zone=trusted --add-service=ssh
+    firewall-cmd --permanent --zone=trusted --add-service=smtp
+    firewall-cmd --permanent --zone=trusted --add-service=cockpit
+    firewall-cmd --permanent --zone=trusted --add-port=10050/tcp
+    
+    firewall-cmd --reload
+
 ## 3. Ansible
     
 ### 3.1 Install
