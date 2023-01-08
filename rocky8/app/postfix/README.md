@@ -11,34 +11,29 @@ main.conf
 
     vi /etc/postfix/main.cf
 
-### 1.3 Config rsyslog for mail
-     
-    dnf -y install rsyslog
-    systemctl enable --now rsyslog
-
-### 1.4 Install rsyslog
+### 1.3 Install rsyslog
      
     dnf -y install rsyslog
     
-### 1.5 Edit vi /etc/rsyslog.conf
+### 1.4 Edit vi /etc/rsyslog.conf for mail logging
 
     mail.*  /var/log/maillog
 
-### 1.6 Check config
+### 1.5 Check config
      
     rsyslogd -N 1
 
-### 1.7 Run rsyslog
+### 1.6 Run rsyslog
      
     systemctl enable --now rsyslog
     systemctl restart rsyslog
 
-### 1.8 Run postfix
+### 1.7 Run postfix
      
     systemctl enable --now postfix
     systemctl restart postfix
     
-### 1.9 setting rules to firewalld
+### 1.8 setting rules to firewalld
 
     firewall-cmd --add-service=smtp
     
