@@ -138,6 +138,10 @@ rocky8
 
     vi /etc/ansible/ansible.cfg
     
+    # 113 line
+    forks=100
+    
+    # 320 line
     host_key_checking = False
     
 ### 3.2.2 Edit hosts
