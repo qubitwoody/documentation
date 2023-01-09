@@ -103,9 +103,17 @@ rocky8
     
     firewall-cmd --reload
     
-### 2.2 specific
+### 2.2 specific public zone
 
     firewall-cmd --zone=public --list-all
+    
+    firewall-cmd --permanent --zone=public --add-interface=ens224
+    
+    firewall-cmd --reload
+
+### 2.3 specific trusted zone
+
+    firewall-cmd --zone=trusted --list-all
     
     firewall-cmd --permanent --zone=trusted --add-interface=ens192
     
@@ -116,7 +124,7 @@ rocky8
     
     firewall-cmd --reload
 
-### 2.3 Rich rules
+### 2.4 Rich rules
 
     firewall-cmd --zone=trusted --permanent --add-rich-rule='rule family="ipv4" source address="10.10.10.0/23" accept'
     
