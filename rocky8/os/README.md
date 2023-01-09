@@ -116,6 +116,12 @@ rocky8
     
     firewall-cmd --reload
 
+### 2.3 Rich rules
+
+    firewall-cmd --zone=trusted --permanent --add-rich-rule='rule family="ipv4" source address="10.10.10.0/23" accept'
+    
+    firewall-cmd --reload
+
 ## 3. Ansible
     
 ### 3.1 Install
