@@ -8,8 +8,6 @@
     ansible all --list-hosts
     
     ansible target_servers --list-hosts
-    
-    curl --noproxy '*' --insecure -v https://repo.plura.io
             
 ### 1.2 
 
