@@ -1,7 +1,6 @@
-# Security
+# Selinux
 
-
-## 1. Selinux
+## 1. Application
 
 ### 1.1 ssh add port
 
