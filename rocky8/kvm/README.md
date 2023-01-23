@@ -11,14 +11,19 @@ libvirtd
     
     reboot
             
-### 1.2 Install required packages.
+### 1.2 Directory
+
+    cd /etc/libvirt/qemu/
+    
+    cd /var/lib/libvirt/images/
+
+### 1.3 Install required packages.
 
     dnf -y install virt-manager
     
     systemctl restart libvirtd
 
-
-### 1.3 Basic command
+### 1.4 Basic command
 
     virsh --help
     
