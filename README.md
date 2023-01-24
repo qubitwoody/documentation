@@ -2,7 +2,7 @@
 
 ### SOFTWARE SELECTION > Server with GUI for KVM & Xrdp
 
-<img src="rocky8/os/images/Rocky8_Software_Selection.png">
+<img src="rocky8/os/images/Rocky8_Software_Selection.png" height="500" width="370">
 
 ### Selinux mode is always on
 
