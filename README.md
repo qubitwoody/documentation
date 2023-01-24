@@ -4,7 +4,7 @@
 
 <img src="rocky8/os/images/Rocky8_Software_Selection.png">
 
-### Selinux mode always on
+### Selinux mode is always on
 
     vi /etc/selinux/config
     
