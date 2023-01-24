@@ -14,8 +14,6 @@
     
 
     
-## X References
+## X Useful Links
 
-    https://www.server-world.info/en/note?os=CentOS_7&p=selinux&f=6
-    
-    https://
+- https://www.server-world.info/en/note?os=CentOS_7&p=selinux&f=6
