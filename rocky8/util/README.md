@@ -11,11 +11,9 @@
     
     curl --noproxy '*' --insecure -v https://repo.plura.io
             
-### 1.2 
+### 1.2 number of lines in file
 
-    vi
-    
-
+    cat filename | wc -l
     
 ## X. Useful Links
 
