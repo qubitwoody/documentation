@@ -1,5 +1,7 @@
 # Installing PLURA on Rocky Linux 8
 
+### SOFTWARE SELECTION > Server with GUI for KVM & Xrdp
+
 <img src="rocky8/os/images/Rocky8_Software_Selection.png">
 
 ### Selinux mode always on
