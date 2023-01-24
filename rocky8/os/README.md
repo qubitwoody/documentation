@@ -183,8 +183,8 @@ rocky8
 
     grep -c processor /proc/cpuinfo
 
-## X. References
+## X. Useful Links
 
-    https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
     
-    https://www.lesstif.com/ws/firewalld-43844015.html
+- https://www.lesstif.com/ws/firewalld-43844015.html
