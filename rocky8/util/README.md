@@ -19,6 +19,5 @@
     
 ## X. Useful Links
 
-    - https://
-    
-    - https://
+- https://
+- https://
