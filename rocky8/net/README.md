@@ -17,4 +17,4 @@
     
 ## X. Useful Links
 
-- https://www.server-world.info/en/note?os=CentOS_Stream_9&p=initial_conf&f=3
+- https://www.server-world.info/en/note?os=Rocky_Linux_8&p=initial_conf&f=3
