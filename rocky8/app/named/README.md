@@ -20,8 +20,9 @@ named.conf
 
 ### 1.4 Config for logging
     
-    touch /var/log/named_query.log
-    chmod a+w /var/log/named_query.log
+    touch /var/log/name/query.log
+    chmod a+w /var/log/name/query.log
+    chown -R named.named /var/log/name/
     
     restorecon -v /var/log/named*
     
