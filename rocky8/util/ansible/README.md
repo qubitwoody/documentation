@@ -11,13 +11,13 @@
             
 ### 1.2 
 
-    ansible target_servers -m ping
+    ansible -i ansible/hosts target_servers -m ping
     
-    ansible target_servers -k -m command -a "uptime"
+    ansible -i ansible/hosts target_servers -k -m command -a "uptime"
     
-    ansible target_servers -k -m command -a "cat /etc/shadow" -b --ask-become-pass
+    ansible -i ansible/hosts target_servers -k -m command -a "cat /etc/shadow" -b --ask-become-pass
     
-    ansible -i hosts all -m shell -a "service cwpsrv status" -b --ask-become-pass
+    ansible -i ansible/hosts all -m shell -a "service cwpsrv status" -b --ask-become-pass
     
     
 ## X References
