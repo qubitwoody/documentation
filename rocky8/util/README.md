@@ -15,7 +15,16 @@
 
     cat filename | wc -l
     
+### 1.3 Check Remote Ports
+
+    dnf install nc
+    
+    nc -zv 192.168.1.15 22
+    
+    nc -zv 192.168.56.10 20-80
+
+
+
 ## X. Useful Links
 
-- https://
-- https://
+- https://www.tecmint.com/check-remote-port-in-linux/
