@@ -3,11 +3,11 @@ virt-manager
 
 ## 1. Install
 
-### 1.1 Install
+### 1.1 Download & Install
 
     https://mobaxterm.mobatek.net/download-home-edition.html
             
-### 1.2 New Session
+### 1.2 Create New Session
 
     Remote host =
     
