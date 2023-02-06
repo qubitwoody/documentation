@@ -20,4 +20,4 @@ virt-manager
 
 ## X. Useful Links
 
-- [https://www.cyberciti.biz/faq/howto-linux-delete-a-running-vm-guest-on-kvm/](https://mobaxterm.mobatek.net/download.html)
+- https://mobaxterm.mobatek.net/download.html
