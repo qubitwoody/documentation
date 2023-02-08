@@ -34,3 +34,7 @@ with xrdp
 ### 1.5 Check
 
     netstat -tnlp
+
+## X. Useful Links
+
+    https://github.com/QubitSecurity/doc/tree/main/rocky8/app/xrdp
