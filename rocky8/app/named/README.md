@@ -31,13 +31,20 @@ named.conf
     systemctl restart named
     systemctl status named
 
-### 1.5 Testing
+### 1.5 Checking
+
+    ls -Z /var/log/named.log
+    
+    > system_u:object_r:named_log_t:s0 /var/log/named.log
+
+
+### 1.6 Testing
 
     tail -f /var/log/named.log
     
     dig www.naver.com
     
-### 1.6 setting rules to firewalld
+### 1.7 setting rules to firewalld
 
     firewall-cmd --add-service=dns
     
