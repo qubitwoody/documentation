@@ -54,3 +54,4 @@ named.conf
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=dns&f=1
     https://www.server-world.info/en/note?os=CentOS_7&p=selinux&f=5
+    https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-bind-types
