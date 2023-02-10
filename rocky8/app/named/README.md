@@ -49,3 +49,7 @@ named.conf
     firewall-cmd --add-service=dns
     
     firewall-cmd --runtime-to-permanent
+
+## X. Useful Links
+
+    https://www.server-world.info/en/note?os=CentOS_7&p=selinux&f=5
