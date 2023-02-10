@@ -20,12 +20,11 @@ named.conf
 
 ### 1.4 Config for logging
     
-    mkdir /var/log/name/
-    touch /var/log/name/query.log
-    chmod a+w /var/log/name/query.log
-    chown -R named.named /var/log/name/
+    touch /var/log/named.log
+    chmod a+w /var/log/named.log
+    chown -R named.named /var/log/named.log
     
-    restorecon -v /var/log/name*
+    restorecon -v /var/log/named.log
     
     systemctl enable --now named
     systemctl restart named
