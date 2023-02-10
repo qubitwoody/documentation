@@ -32,7 +32,7 @@ named.conf
 
 ### 1.5 Testing
 
-    tail -f /var/log/name/query.log
+    tail -f /var/log/named.log
     
     dig www.naver.com
     
