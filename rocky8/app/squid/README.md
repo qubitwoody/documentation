@@ -11,7 +11,7 @@
     vi /etc/squid/squid.conf
     
     # line 29
-    acl my_localnet src 10.0.0.0/24
+    acl my_localnet src 10.10.10.0/23
     
     # line 46 : uncomment
     http_access deny to_localhost
