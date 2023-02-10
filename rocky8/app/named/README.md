@@ -24,6 +24,7 @@ named.conf
     chmod a+w /var/log/named.log
     chown -R named.named /var/log/named.log
     
+    chcon -u system_u /var/log/named.log
     restorecon -v /var/log/named.log
     
     systemctl enable --now named
