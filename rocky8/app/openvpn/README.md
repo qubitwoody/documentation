@@ -28,7 +28,7 @@
     openvpn --genkey --secret ./pki/ta.key
 
 
-### 1.3 Copy
+### 1.3 Copy generated certs
 
     cp -pR /usr/share/easy-rsa/3/pki/{issued,private,ca.crt,dh.pem,ta.key} /etc/openvpn/server/
        
