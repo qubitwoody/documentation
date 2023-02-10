@@ -52,4 +52,5 @@ named.conf
 
 ## X. Useful Links
 
+    https://www.server-world.info/en/note?os=Rocky_Linux_8&p=dns&f=1
     https://www.server-world.info/en/note?os=CentOS_7&p=selinux&f=5
