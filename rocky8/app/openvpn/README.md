@@ -1,6 +1,6 @@
 # OpenVPN
 
-## 1. Install
+## 1. Install for Server
 
 ### 1.1 Install
 
@@ -83,9 +83,9 @@
     
     systemctl status openvpn-server@server
 
-## 2
+## 2 Install for Client
 
-### 2.1
+### 2.1 Create Key
 
     easyrsa build-client-full Client1
     
