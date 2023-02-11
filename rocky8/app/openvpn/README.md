@@ -62,7 +62,9 @@
     
     firewall-cmd --permanent --zone=trusted --add-interface=enp1s0
     
-    
+    firewall-cmd --permanent --zone=public --add-port=1194/udp
+    firewall-cmd --permanent --zone=public --add-port=1194/tcp
+    firewall-cmd --reload
     
 ### 1.8 Config for SElinux
 
