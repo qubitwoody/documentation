@@ -88,7 +88,7 @@
 
     netstat -tunlp
 
-## 2 Install for Client
+## 2. Install for Client
 
 ### 2.1 Create Key
 
@@ -102,7 +102,7 @@
     zip -xi Client1.zip ca.crt Client1.crt Client1.key ta.key
 
 
-## 3 To use OpenVPN with TCP protocol
+## 3. To use OpenVPN with TCP protocol
 
 ### 3.1  The protocol must be specified explicitly
 
