@@ -96,6 +96,20 @@
     
     zip -xi Client1.zip ca.crt Client1.crt Client1.key ta.key
 
+
+## 3 To use OpenVPN with TCP protocol
+
+### 3.1  The protocol must be specified explicitly
+
+    ;proto tcp
+    proto tcp-server
+    proto tcp-client
+    
+### 3.2  Do not use the explicit-exit-notify option
+
+    ;explicit-exit-notify 1
+
 ## X. Useful Links
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=openvpn&f=1
+    https://suay.site/?p=1828
