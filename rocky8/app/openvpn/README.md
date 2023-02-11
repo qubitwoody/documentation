@@ -122,3 +122,4 @@
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=openvpn&f=1
     https://suay.site/?p=1828
+    https://openvpn.net/community-downloads/
