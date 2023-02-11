@@ -62,6 +62,8 @@
     
     firewall-cmd --permanent --zone=trusted --add-interface=enp1s0
     
+    
+    
 ### 1.8 Config for SElinux
 
     chcon -u system_u /etc/openvpn/scripts/add-bridge.sh
