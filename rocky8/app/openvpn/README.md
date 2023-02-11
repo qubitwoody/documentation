@@ -102,7 +102,11 @@
 ### 3.1  The protocol must be specified explicitly
 
     ;proto tcp
+    
+    ; use on the server the line
     proto tcp-server
+    
+    ; and on the client the line
     proto tcp-client
     
 ### 3.2  Do not use the explicit-exit-notify option
