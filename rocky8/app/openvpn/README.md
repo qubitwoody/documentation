@@ -36,7 +36,7 @@
 
     vi /etc/openvpn/server/server.conf
 
-### 1.5 Register service
+### 1.5 Create for service
 
     mkdir /etc/openvpn/scritps/
     
@@ -45,7 +45,7 @@
     vi /etc/openvpn/scritps/remove-bridge.sh
 
 
-### 1.6 
+### 1.6 Register for service
 
     chmod 700 /etc/openvpn/scritps/{add-bridge.sh,remove-bridge.sh}
     
@@ -55,14 +55,14 @@
     ExecStartPost=/etc/openvpn/scritps/add-bridge.sh
     ExecStopPost=/etc/openvpn/scritps/remove-bridge.sh
 
-### 1.7
+### 1.7 Firewalld
 
     firewall-cmd --get-default-zone
     firewall-cmd --get-active-zones
     
     firewall-cmd --permanent --zone=trusted --add-interface=enp1s0
     
-### 1.8
+### 1.8 Config for SElinux
 
     chcon -u system_u /etc/openvpn/scripts/add-bridge.sh
     chcon -u system_u /etc/openvpn/scripts/remove-bridge.sh
@@ -75,13 +75,18 @@
     
     semodule -i openvpn_rule.pp
     
-### 1.9
+### 1.9 Run
 
     systemctl enable --now openvpn-server@server
     
     systemctl restart openvpn-server@server
     
     systemctl status openvpn-server@server
+
+
+### 1.10 Checking
+
+    netstat -tunlp
 
 ## 2 Install for Client
 
