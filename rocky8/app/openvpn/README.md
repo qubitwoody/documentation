@@ -91,6 +91,8 @@
 ### 1.10 Checking
 
     netstat -tunlp
+    
+    tcpdump -i enp7s0 port 1194 -vv
 
 ## 2. Install for Client
 
