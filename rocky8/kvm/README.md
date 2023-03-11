@@ -5,7 +5,7 @@ libvirtd
 
 ### 1.1 Install
 
-    dnf -y install qemu-kvm libvirt virt-install
+    dnf -y install qemu-kvm libvirt virt-install virt-manager
     
     systemctl enable --now libvirtd
     
