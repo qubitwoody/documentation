@@ -25,7 +25,7 @@ with xrdp
 
     vi /etc/tigervnc/vncserver.users
     
-    :99=user
+    :99=root
 
 ### 1.4 Run
 
