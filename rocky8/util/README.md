@@ -23,7 +23,11 @@
     
     nc -zv 192.168.56.10 20-80
 
+## 2. Hostname
 
+### 2.1 hostname
+
+    hostnamectl set-hostname 010010-kvm
 
 ## X. Useful Links
 
