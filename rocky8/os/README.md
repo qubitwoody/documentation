@@ -188,3 +188,7 @@ rocky8
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
     
 - https://www.lesstif.com/ws/firewalld-43844015.html
+
+- https://faq.hostway.co.kr/Linux_ETC/7437
+
+- https://mpjamong.tistory.com/16
