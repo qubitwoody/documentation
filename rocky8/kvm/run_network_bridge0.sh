@@ -1,6 +1,6 @@
 nmcli connection add type bridge autoconnect yes con-name bridge0 ifname bridge0
 
-nmcli connection modify bridge0 ipv4.addresses 10.10.11.3/24 ipv4.method manual
+nmcli connection modify bridge0 ipv4.addresses 10.10.11.3/23 ipv4.method manual
 
 nmcli connection modify bridge0 ipv4.gateway 10.10.10.1
 
