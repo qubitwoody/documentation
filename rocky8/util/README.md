@@ -29,6 +29,10 @@
 
     hostnamectl set-hostname 010010-kvm
 
+### 2.2 localectl
+
+    localectl set-locale LANG=ko_KR.utf8
+
 ## X. Useful Links
 
 - https://www.tecmint.com/check-remote-port-in-linux/
