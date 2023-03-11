@@ -25,11 +25,11 @@
 
 ## 2. Hostname
 
-### 2.1 hostname
+### 2.1 Set System Hostname
 
     hostnamectl set-hostname 010010-kvm
 
-### 2.2 localectl
+### 2.2 Set System Locale
 
     localectl set-locale LANG=ko_KR.utf8
 
