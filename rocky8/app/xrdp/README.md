@@ -24,6 +24,8 @@ xrdp from EPEL and with using tigervnc
 
     systemctl enable --now xrdp
     
+    systemctl restart xrdp
+    
 ### 1.4 Setting rules to firewalld
 
     firewall-cmd --add-port=3389/tcp
