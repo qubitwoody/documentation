@@ -37,7 +37,7 @@ with xrdp
 
     netstat -tnlp
 
-    netstat -tnlp | grep 3389 | grep 5999
+    netstat -tnlp | grep -e 3389 -e 5999
 
 ## X. Useful Links
 
