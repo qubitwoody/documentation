@@ -33,6 +33,8 @@ xrdp from EPEL and with using tigervnc
 ### 1.5 Check
 
     netstat -tnlp
+    
+    netstat -tnlp | grep 3389 5999
 
 ## X. Useful Links
 
