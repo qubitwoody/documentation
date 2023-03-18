@@ -30,7 +30,9 @@ with xrdp
 ### 1.4 Run
 
     systemctl enable --now vncserver@:99
-    
+
+    systemctl restart vncserver@:99
+
 ### 1.5 Check
 
     netstat -tnlp
