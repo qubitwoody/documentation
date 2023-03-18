@@ -35,6 +35,8 @@ with xrdp
 
     netstat -tnlp
 
+    netstat -tnlp | grep 5999
+
 ## X. Useful Links
 
     https://github.com/QubitSecurity/doc/tree/main/rocky8/app/xrdp
