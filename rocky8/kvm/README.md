@@ -60,6 +60,13 @@ libvirtd
     
     virt-clone --original 24GBMSA --name 24GBMSA-zabbix --file /var/lib/libvirt/images/24GBMSA-zabbix.qcow2
 
+## 3. Resize
+
+### 3.1 resize
+
+    qemu-img resize /var/lib/libvirt/images/24GBMSA.qcow2 +100G
+
+
 ## X. Useful Links
 
 - https://www.cyberciti.biz/faq/howto-linux-delete-a-running-vm-guest-on-kvm/
