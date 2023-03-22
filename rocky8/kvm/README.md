@@ -52,9 +52,9 @@ libvirtd
     
 ### 2.2 copy
 
-    scp /etc/libvirt/qemu/24GBMSA.xml root@10.10.10.11:/etc/libvirt/qemu/
+    scp /etc/libvirt/qemu/24GBMSA.xml root@10.10.11.10:/etc/libvirt/qemu/
     
-    scp /var/lib/libvirt/images/24GBMSA.qcow2 root@10.10.10.11:/var/lib/libvirt/images/
+    scp /var/lib/libvirt/images/24GBMSA.qcow2 root@10.10.11.10:/var/lib/libvirt/images/
     
     systemctl restart libvirtd
     
