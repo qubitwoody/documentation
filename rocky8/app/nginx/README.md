@@ -41,9 +41,22 @@ Nginx conf
     
     firewall-cmd --runtime-to-permanent
 
-## 2. Selinx
+## 2. Install with Stream mode
 
-### 2.1 Setup
+### 2.1 Install nginx
+
+    wget https://nginx.org/download/nginx-1.22.0.tar.gz
+    
+    tar xvzf nginx-1.22.0.tar.gz
+    
+    ./configure --with-stream --without-http_rewrite_module --without-http_gzip_module
+    
+    /usr/local/nginx/sbin/nginx -t
+    
+
+## 3. Selinx
+
+### 3.1 Setup
 
     chmod -R 755 /home
     chcon -R -t httpd_sys_content_t /home/users/
