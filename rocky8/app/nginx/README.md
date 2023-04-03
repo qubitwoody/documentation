@@ -45,9 +45,9 @@ Nginx conf
 
 ### 2.1 Install nginx
 
-    wget https://nginx.org/download/nginx-1.22.0.tar.gz
+    wget https://nginx.org/download/nginx-1.22.1.tar.gz
     
-    tar xvzf nginx-1.22.0.tar.gz
+    tar xvzf nginx-1.22.1.tar.gz
     
     ./configure --with-stream --without-http_rewrite_module --without-http_gzip_module
     
