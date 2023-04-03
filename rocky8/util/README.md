@@ -25,7 +25,7 @@
 
 ### 1.4 Check Remote Ports with UDP
 
-    nc -vz -u 192.168.56.10 5514
+    nc -zv -u 192.168.56.10 5514
 
 ## 2. Hostname
 
