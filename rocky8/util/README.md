@@ -23,6 +23,10 @@
     
     nc -zv 192.168.56.10 20-80
 
+### 1.4 Check Remote Ports with UDP
+
+    nc -vz -u 192.168.56.10 5514
+
 ## 2. Hostname
 
 ### 2.1 Set System Hostname
