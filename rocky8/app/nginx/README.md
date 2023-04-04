@@ -43,7 +43,11 @@ Nginx conf
 
 ## 2. Install with Stream mode
 
-### 2.1 Install nginx
+### 2.1 Install package
+
+    dnf -y install gcc make
+    
+### 2.2 Install nginx
 
     wget https://nginx.org/download/nginx-1.22.1.tar.gz
     
@@ -53,6 +57,20 @@ Nginx conf
     
     /usr/local/nginx/sbin/nginx -t
     
+### 2.3 Register service
+
+    vi /lib/systemd/system/nginx.service
+    
+    systemctl daemon-reload
+    
+    systemctl restart nginx
+
+### 2.4 setting rules to firewalld
+
+    firewall-cmd --permanent --zone=public --add-port=514/tcp
+    firewall-cmd --permanent --zone=public --add-port=514/udp
+    
+    firewall-cmd --runtime-to-permanent
 
 ## 3. Selinx
 
