@@ -55,6 +55,10 @@ Nginx conf
     
     ./configure --with-stream --without-http_rewrite_module --without-http_gzip_module
     
+    make && make install
+    
+    vi /usr/local/nginx/conf/nginx.conf
+    
     /usr/local/nginx/sbin/nginx -t
     
 ### 2.3 Register service
