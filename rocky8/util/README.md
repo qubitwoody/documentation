@@ -37,6 +37,17 @@
 
     localectl set-locale LANG=ko_KR.utf8
 
+## 3. Proxy
+
+### 3.1 create new
+
+    vi /etc/profile.d/proxy.sh
+
+### 3.2 run
+
+    source /etc/profile.d/pproxy.sh
+
+
 ## X. Useful Links
 
 - https://www.tecmint.com/check-remote-port-in-linux/
