@@ -41,7 +41,7 @@
 
 ### 3.1 create new
 
-    vi /etc/profile.d/proxy.sh
+    vi /etc/profile.d/pproxy.sh
 
 ### 3.2 run
 
