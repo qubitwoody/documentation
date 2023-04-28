@@ -2,6 +2,6 @@
 
 ## 1. Ventory
 
-### 1.1 Dwnload
+### 1.1 Dwonload
 
     https://www.ventoy.net/en/download.html
