@@ -182,6 +182,10 @@ rocky8
 ### 9.2 CPU core Counts
 
     grep -c processor /proc/cpuinfo
+    
+    grep "physical id" /proc/cpuinfo | sort -u
+    
+    grep "cpu cores" /proc/cpuinfo | tail -1
 
 ## X. Useful Links
 
