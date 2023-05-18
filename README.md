@@ -10,6 +10,11 @@
     
     SELINUX=enforcing
 
+## X. Download
+
+- http://mirror.navercorp.com/rocky/
+
+
 ## X. Useful Links
 
 - https://gist.github.com/ihoneymon/652be052a0727ad59601
