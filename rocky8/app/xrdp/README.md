@@ -38,6 +38,17 @@ xrdp from EPEL and with using tigervnc
     
     netstat -tnlp | grep -e 3389 -e 5999
 
+## 2. Troubleshooting
+
+### 2.1 error after update xrdp
+
+    error loading libvnc.so specified in xrdp.ini, please add a valid entry like lib=libxrdp-vnc.so or similar
+
+### 2.2 just copy from previous version
+
+    find / -name libvnc.so
+    cp /usr/lib64/xrdp/libvnc.so to destination
+
 ## X. Useful Links
 
     https://github.com/QubitSecurity/doc/tree/main/rocky8/app/tigervnc
