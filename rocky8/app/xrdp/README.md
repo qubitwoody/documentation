@@ -42,7 +42,7 @@ xrdp from EPEL and with using tigervnc
 
 ### 2.1 error after update xrdp
 
-    error loading libvnc.so specified in xrdp.ini, please add a valid entry like lib=libxrdp-vnc.so or similar
+    "error loading libvnc.so specified in xrdp.ini, please add a valid entry like lib=libxrdp-vnc.so or similar"
 
 ### 2.2 just copy from previous version
 
