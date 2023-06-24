@@ -29,8 +29,11 @@
         
     firewall-cmd --runtime-to-permanent
     
-## X. Useful Links
+## 3. Useful Links
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=nfs&f=1
 
-![nfs_vmware](https://github.com/QubitSecurity/documentation/assets/24949168/d852406a-8bb1-4b01-8ee6-d245af5200e2)
+
+## 4. Example for nfs client config
+
+![nfs_vmware](https://github.com/QubitSecurity/documentation/assets/24949168/06f2608a-bbc0-4dd0-8257-db4a87847fe5)
