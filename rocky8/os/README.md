@@ -196,3 +196,4 @@ rocky8
 - https://faq.hostway.co.kr/Linux_ETC/7437
 
 - https://mpjamong.tistory.com/16
+- https://3sikkim.tistory.com/7
