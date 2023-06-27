@@ -120,6 +120,7 @@ rocky8
     firewall-cmd --permanent --zone=trusted --add-service=ssh
     firewall-cmd --permanent --zone=trusted --add-service=smtp
     firewall-cmd --permanent --zone=trusted --add-service=cockpit
+    firewall-cmd --permanent --zone=trusted --add-port=3389/tcp
     firewall-cmd --permanent --zone=trusted --add-port=10050/tcp
     
     firewall-cmd --reload
