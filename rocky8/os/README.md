@@ -62,7 +62,7 @@ rocky8
 
     dnf -y install net-snmp net-snmp-utils
     
-    vi /etc/snmpd/snmp.conf
+    vi /etc/snmp/snmpd.conf
     
     systemctl enable --now snmpd
     
