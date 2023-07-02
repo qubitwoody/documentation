@@ -71,3 +71,4 @@ libvirtd
 
 - https://www.cyberciti.biz/faq/howto-linux-delete-a-running-vm-guest-on-kvm/
 - https://www.cyberciti.biz/faq/how-to-forcefully-shutdown-forcing-a-guest-to-stop-using-virsh-command/
+- https://access.redhat.com/solutions/6967304
