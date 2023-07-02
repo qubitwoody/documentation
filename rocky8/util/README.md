@@ -70,8 +70,9 @@
 
     ras-mc-ctl --summary
 
-    rasdaemon --record
+    ras-mc-ctl --errors
 
+    ras-mc-ctl --layout
 
 ## X. Useful Links
 
