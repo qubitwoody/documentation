@@ -48,6 +48,18 @@
     source /etc/profile.d/pproxy.sh
 
 
+## 4. Check Memory
+
+### 4.1 run
+
+    dmidecode -t 16
+
+    dmidecode -t 17
+
+    lshw -class memory | grep size
+
+
 ## X. Useful Links
 
 - https://www.tecmint.com/check-remote-port-in-linux/
+- https://appuals.com/check-ram-slots-linux/
