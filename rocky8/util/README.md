@@ -50,16 +50,18 @@
 
 ## 4. Check Memory
 
-### 4.1 run
+### 4.1 run dmidecode
 
     dmidecode -t 16
 
     dmidecode -t 17
 
+    dmidecode -t memory | grep Error
+
+### 4.2 run lshw
+
     lshw -class memory
-
-### 4.2 only size
-
+    
     lshw -class memory | grep size
 
 ### 4.3 using rasdaeomn
