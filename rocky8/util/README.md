@@ -62,6 +62,14 @@
 
     lshw -class memory | grep size
 
+### 4.3 using rasdaeomn
+
+    rasdaemon --record
+
+    ras-mc-ctl --summary
+
+    rasdaemon --record
+
 
 ## X. Useful Links
 
