@@ -56,6 +56,10 @@
 
     dmidecode -t 17
 
+    lshw -class memory
+
+### 4.2 only size
+
     lshw -class memory | grep size
 
 
