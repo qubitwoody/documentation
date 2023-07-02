@@ -74,7 +74,16 @@
 
     ras-mc-ctl --layout
 
+    ras-mc-ctl --mainboard
+
+    ras-mc-ctl --status
+
+    ras-mc-ctl --print-labels
+
+    ras-mc-ctl --guess-labels
+
 ## X. Useful Links
 
 - https://www.tecmint.com/check-remote-port-in-linux/
 - https://appuals.com/check-ram-slots-linux/
+- https://gigglehd.com/gg/soft/6266879
