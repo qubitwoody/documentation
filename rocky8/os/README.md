@@ -173,21 +173,6 @@ rocky8
     
     ssh-copy-id root@10.0.0.51
 
-## 9. Check
-    
-### 9.1 systemd-tmpfiles-setup.service
-
-    systemctl status systemd-tmpfiles-setup.service
-
-
-### 9.2 CPU core Counts
-
-    grep -c processor /proc/cpuinfo
-    
-    grep "physical id" /proc/cpuinfo | sort -u
-    
-    grep "cpu cores" /proc/cpuinfo | tail -1
-
 ## X. Useful Links
 
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
