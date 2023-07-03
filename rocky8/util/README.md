@@ -45,42 +45,13 @@
 
 ### 3.2 run
 
-    source /etc/profile.d/pproxy.sh
+    source /etc/profile.d/pproxy.sh ls -l | awk '{ print $9 }'
 
+## 4. ls
 
-## 4. Check Memory
+### 4.1 print only filename
 
-### 4.1 run dmidecode
-
-    dmidecode -t 16
-
-    dmidecode -t 17
-
-    dmidecode -t memory | grep Error
-
-### 4.2 run lshw
-
-    lshw -class memory
-    
-    lshw -class memory | grep size
-
-### 4.3 using rasdaeomn
-
-    rasdaemon --record
-
-    ras-mc-ctl --summary
-
-    ras-mc-ctl --errors
-
-    ras-mc-ctl --layout
-
-    ras-mc-ctl --mainboard
-
-    ras-mc-ctl --status
-
-    ras-mc-ctl --print-labels
-
-    ras-mc-ctl --guess-labels
+    ls -l | awk '{ print $9 }'
 
 ## X. Useful Links
 
