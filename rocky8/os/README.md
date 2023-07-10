@@ -31,7 +31,7 @@ rocky8
 
     cp -f /etc/sudoers /etc/sudoers.bak
     
-    awk 'NR==102{print "user        ALL=(ALL)       NOPASSWD: ALL"}104' /etc/sudoers.bak > /etc/sudoers
+    awk 'NR==111{print "user        ALL=(ALL)       NOPASSWD: ALL"}113' /etc/sudoers.bak > /etc/sudoers
     
     cat /etc/sudoers | grep user
     
