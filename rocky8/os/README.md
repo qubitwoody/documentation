@@ -19,6 +19,7 @@ rocky8
     
     export http_proxy=http://172.16.10.20:3128
     export https_proxy=http://172.16.10.20:3128
+    export no_proxy=localhost, 127.0.0.1
 
 
 ### 0.3 cockpit
