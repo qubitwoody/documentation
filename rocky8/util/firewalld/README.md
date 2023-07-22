@@ -23,11 +23,19 @@
     
     firewall-cmd --reload
 
-### 2.3.1 rich rule
+### 2.3.1 add rich rule
 
     firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address="1.1.1.1/32" port protocol="tcp" port="3389" accept'
     
     firewall-cmd --reload
+
+
+### 2.3.1 remove rich rule
+
+    firewall-cmd --permanent --zone=public --remove-rich-rule='rule family="ipv4" source address="1.1.1.1/32" port protocol="tcp" port="3389" accept'
+    
+    firewall-cmd --reload
+
 
 ### 2.4 specific trusted zone
 
