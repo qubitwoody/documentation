@@ -34,6 +34,7 @@
             
 ### 2.2 vi /etc/redis.conf
 
+    chown redis.root /etc/redis-6379.conf
     chown redis.root /etc/redis-6381.conf
     chown redis.root /etc/redis-6383.conf
 
