@@ -19,23 +19,37 @@
 
     echo never > /sys/kernel/mm/transparent_hugepage/enabled
 
+### 1.3 vi /etc/security/limits.conf
+
+    echo "redis   soft    nofile  65535" >> /etc/security/limits.conf
+    echo "redis   hard    nofile  65535" >> /etc/security/limits.conf
+
 ## 2. Install
 
 ### 2.1 Install redis
 
     dnf module list redis
     
-    dnf module -y install redis:5
+    dnf module -y install redis:6
             
 ### 2.2 vi /etc/redis.conf
 
+    chown redis.root /etc/redis-6381.conf
+    chown redis.root /etc/redis-6383.conf
 
-### 2.3 Run redis
+### 2.3 set config
+
+    touch /var/lib/redis/nodes-6381.conf
+    touch /var/lib/redis/nodes-6383.conf
+
+    chown -R redis.redis /var/lib/redis/nodes-6381.conf
+    chown -R redis.redis /var/lib/redis/nodes-6383.conf
+
+### 2.4 Run redis
 
     systemctl enable --now redis
     
     ps -ef | grep redis
-
 
 ## 3. Selinux & Firewalld
 
@@ -108,4 +122,4 @@
 
 ### X. Useful Links
 
-    https://
+    https://www.server-world.info/en/note?os=CentOS_Stream_8&p=redis6&f=1
