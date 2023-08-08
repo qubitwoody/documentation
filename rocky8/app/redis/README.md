@@ -56,11 +56,17 @@
 ### 3.1 Selinux (generally unnecessary)
 
     dnf -y install policycoreutils-python-utils
-    
-    semanage port -a -t redis_port_t -p tcp 6379
-    
-    semanage port -a -t redis_port_t -p tcp 16379
 
+    semanage port -l | grep redis_port_t
+    
+    semanage port -a -t redis_port_t -p tcp 6381
+    semanage port -a -t redis_port_t -p tcp 16381
+
+    semanage port -a -t redis_port_t -p tcp 6383
+    semanage port -a -t redis_port_t -p tcp 16383
+
+    semanage port -a -t redis_port_t -p tcp 26381
+    semanage port -a -t redis_port_t -p tcp 26383   
 
 ### 3.2 Firewalld
 
