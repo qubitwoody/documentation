@@ -52,6 +52,8 @@ rocky8
     vi /etc/chrony.conf
     
     systemctl enable --now chronyd
+
+    chronyc sources
             
 ### 1.2 Rsyslog
 
