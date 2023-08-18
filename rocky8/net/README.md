@@ -13,7 +13,13 @@
 
     nmcli connection down ens192; nmcli connection up ens192
     
-    nmcli connection down ens224; nmcli connection up ens224
+    nmcli connection down ens224; nmcli connection up ens224 nmcli connection modify br0 ipv6.method "disabled"
+
+## 2. Disable IPv6
+
+### 2.1 set   
+
+    nmcli connection modify br0 ipv6.method "disabled"
     
 ## X. Useful Links
 
