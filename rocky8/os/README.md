@@ -186,3 +186,4 @@ rocky8
 
 - https://mpjamong.tistory.com/16
 - https://3sikkim.tistory.com/7
+- https://www.thegeekdiary.com/how-to-disable-ipv6-in-centos-rhel-8/
