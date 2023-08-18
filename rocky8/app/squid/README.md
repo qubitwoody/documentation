@@ -40,7 +40,11 @@
     
     firewall-cmd --runtime-to-permanent
 
-### 1.5 Check
+### 1.5 Check config
+
+    squid -k parse
+
+### 1.6 Check process
 
     netstat -tnlp
 
