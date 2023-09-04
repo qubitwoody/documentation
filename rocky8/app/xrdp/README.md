@@ -5,6 +5,7 @@ xrdp from EPEL and with using tigervnc
 
 ### 1.1 Install
 
+    dnf -y install epel-release
     dnf --enablerepo=epel -y install xrdp
     
 ### 1.2 Config
