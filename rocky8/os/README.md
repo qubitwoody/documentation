@@ -21,7 +21,6 @@ rocky8
     export https_proxy=http://172.16.10.20:3128
     export no_proxy=localhost,127.0.0.1
 
-
 ### 0.3 cockpit
 
     systemctl enable --now cockpit.socket
@@ -35,7 +34,14 @@ rocky8
     awk 'NR==111{print "user        ALL=(ALL)       NOPASSWD: ALL"}113' /etc/sudoers.bak > /etc/sudoers
     
     cat /etc/sudoers | grep user
+
+### 0.5 machine-id
+
+    rm /etc/machine-id
     
+    systemd-machine-id-setup
+
+    cat /etc/machine-id
 
 ## 1. Basic config
 
@@ -187,3 +193,4 @@ rocky8
 - https://mpjamong.tistory.com/16
 - https://3sikkim.tistory.com/7
 - https://www.thegeekdiary.com/how-to-disable-ipv6-in-centos-rhel-8/
+- https://www.thegeekdiary.com/centos-rhel-7-how-to-change-the-machine-id/
