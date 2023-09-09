@@ -48,6 +48,28 @@
 
     netstat -tnlp
 
+## 2. PLURA-SQUID
+
+### 2.1 make web.log
+
+    touch /var/log/plura/weblog.log
+    
+    chown squid.root /var/log/plura/weblog.log
+    chmod -R 766 /var/log/plura/weblog.log
+
+    chcon -t squid_log_t /var/log/plura/weblog.log
+
+### 2.2 add info
+
+    echo "ModPlura-squid" > /etc/modplura
+    echo "0.0.1" >> /etc/modplura
+    touch /etc/.modplura
+
+### 2.3 restart
+
+    systemctl restart squid
+    systemctl status squid
+
 ## X. Useful Links
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=squid&f=1
