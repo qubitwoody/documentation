@@ -182,6 +182,10 @@ rocky8
     
     ssh-copy-id root@10.0.0.51
 
+## X.0 OS Download
+
+- https://mirror.navercorp.com/rocky/8/isos/x86_64/
+
 ## X. Useful Links
 
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
