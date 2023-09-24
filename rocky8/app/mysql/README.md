@@ -68,6 +68,8 @@
 
 ### 3.1 Master
 
+    mysql -uplura -p
+    
     show master status;
 
 ### 3.2 Slave
