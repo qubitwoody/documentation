@@ -37,7 +37,6 @@
     
     mysql> show variables like 'char%';p
 
-
 ### 1.7 Setting rules to firewalld
 
     firewall-cmd --permanent --zone=public --add-port=3306/tcp
@@ -47,7 +46,6 @@
     firewall-cmd --reload
 
 ## 2. Clone
-
 
 ### 2.1 Clone
 
@@ -66,6 +64,66 @@
     [auto]
     server-uuid=1b58f12d-5fec-11ed-bc07-000c29f03601
 
+## 3. Replication for error
+
+### 3.1 Master
+
+    show master status;
+
+### 3.2 Slave
+
+    show slave status \G;
+    
+    STOP SLAVE;
+
+    SET GLOBAL SQL_SLAVE_SKIP_COUNTER=1;
+
+    START SLAVE;
+
+### 3.3 Slave
+    
+    STOP SLAVE;
+
+    CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000023', MASTER_LOG_POS=157;
+
+    START SLAVE;
+
+    show slave status \G;    
+
+### 3.4 Master with mysql
+
+    FLUSH TABLES WITH READ LOCK;
+
+    RESET MASTER;
+
+    SHOW MASTER STATUS;
+
+### 3.5 Master with shell
+
+    mysqldump -uplura -p --events --triggers --routines --all-databases > dump-today.sql
+
+    scp dump-today.sql to slave mysql
+
+### 3.6 Master with mysql
+
+    UNLOCK TABLES;
+
+### 3.5 Slave with mysql
+   
+    STOP SLAVE;
+    RESET SLAVE;
+    
+### 3.5 Slave with shell
+   
+    mysql -uplura -p < dump-today.sql
+
+### 3.6 Slave with mysql
+   
+    CHANGE MASTER TO MASTER_HOST='10.10.10.000', MASTER_USER='repl', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=157;
+
+    START SLAVE;
+
+    show slave status \G;
 
 ### X. Useful Links
 
