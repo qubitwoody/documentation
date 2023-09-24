@@ -108,16 +108,16 @@
 
     UNLOCK TABLES;
 
-### 3.5 Slave with mysql
+### 3.7 Slave with mysql
    
     STOP SLAVE;
     RESET SLAVE;
     
-### 3.5 Slave with shell
+### 3.8 Slave with shell
    
     mysql -uplura -p < dump-today.sql
 
-### 3.6 Slave with mysql
+### 3.9 Slave with mysql
    
     CHANGE MASTER TO MASTER_HOST='10.10.10.000', MASTER_USER='repl', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=157;
 
