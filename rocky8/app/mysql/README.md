@@ -68,7 +68,7 @@
 
 ### 3.1 Master
 
-    mysql -uplura -p
+    mysql -uUser -p
     
     show master status;
 
@@ -102,7 +102,7 @@
 
 ### 3.5 Master with shell
 
-    mysqldump -uplura -p --events --triggers --routines --all-databases > dump-today.sql
+    mysqldump -uUser -p --events --triggers --routines --all-databases > dump-today.sql
 
     scp dump-today.sql to slave mysql
 
@@ -117,7 +117,7 @@
     
 ### 3.8 Slave with shell
    
-    mysql -uplura -p < dump-today.sql
+    mysql -uUser -p < dump-today.sql
 
 ### 3.9 Slave with mysql
    
