@@ -56,6 +56,19 @@
 
     ras-mc-ctl --guess-labels
 
+### 4.4 Cache clear
+
+    sync
+    sync
+    sync
+
+    echo 1 > /proc/sys/vm/drop_caches
+
+    echo 2 > /proc/sys/vm/drop_caches
+
+    echo 3 > /proc/sys/vm/drop_caches
+
+
 ## X. Useful Links
 
 - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%EC%A2%85%EB%A5%98_%ED%99%95%EC%9D%B8,_%EB%A6%AC%EB%88%85%EC%8A%A4_%EB%B2%84%EC%A0%84_%ED%99%95%EC%9D%B8 
