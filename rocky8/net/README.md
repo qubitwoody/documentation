@@ -21,7 +21,6 @@
 
     nmcli connection modify br0 ipv6.method "disabled"
     
-
 ## 3. Change Promisc
 
 ### 3.1 promisc on and off
@@ -30,5 +29,20 @@
     
     ifconfig eno4 -promisc
             
+## 4. Port mirror
+
+### 4.1 restart networkmanager
+
+    nmcli connection add type ethernet ifname brm con-name brm autoconnect no
+    
+    systemctl restart NetworkManager
+
+    
+### 4.2 restart the interface to reload settings
+
+    nmcli connection down ens192; nmcli connection up ens192
+    
+    nmcli connection down ens224; nmcli connection up ens224 nmcli connection modify br0 ipv6.method "disabled"
+
 ## X. Useful Links
 - https://www.server-world.info/en/note?os=Rocky_Linux_8&p=initial_conf&f=3
