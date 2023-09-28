@@ -52,3 +52,5 @@
 
 ## X. Useful Links
 - https://www.server-world.info/en/note?os=Rocky_Linux_8&p=initial_conf&f=3
+- https://www.server-world.info/en/note?os=CentOS_Stream_8&p=bonding
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/assembly_port-mirroring_configuring-and-managing-networking
