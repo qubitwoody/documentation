@@ -21,6 +21,14 @@
 
     nmcli connection modify br0 ipv6.method "disabled"
     
-## X. Useful Links
 
+## 3. Change Promisc
+
+### 3.1 promisc on and off
+
+    ifconfig eno4 promisc
+    
+    ifconfig eno4 -promisc
+            
+## X. Useful Links
 - https://www.server-world.info/en/note?os=Rocky_Linux_8&p=initial_conf&f=3
