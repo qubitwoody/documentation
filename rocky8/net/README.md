@@ -35,7 +35,13 @@
 
     nmcli connection add type ethernet ifname brm con-name brm autoconnect no
     
-    systemctl restart NetworkManager
+    nmcli connection modify brm +tc.qdisc "root prio handle 10:"
+    nmcli connection modify brm +tc.qdisc "ingress handle ffff:"
+
+    nmcli connection modify brm +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
+    nmcli connection modify brm +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
+
+    nmcli connection brm on
 
     
 ### 4.2 restart the interface to reload settings
