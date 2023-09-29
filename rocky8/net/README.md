@@ -33,15 +33,15 @@
 
 ### 4.1 restart networkmanager
 
-    nmcli connection add type ethernet ifname brm con-name brm autoconnect no
+    nmcli connection add type ethernet ifname eno4 con-name eno4 autoconnect no
     
-    nmcli connection modify brm +tc.qdisc "root prio handle 10:"
-    nmcli connection modify brm +tc.qdisc "ingress handle ffff:"
+    nmcli connection modify eno4 +tc.qdisc "root prio handle 10:"
+    nmcli connection modify eno4 +tc.qdisc "ingress handle ffff:"
 
-    nmcli connection modify brm +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
-    nmcli connection modify brm +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
+    nmcli connection modify eno4 +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
+    nmcli connection modify eno4 +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
 
-    nmcli connection brm on
+    nmcli connection eno4 on
 
     
 ### 4.2 restart the interface to reload settings
