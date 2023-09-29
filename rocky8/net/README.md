@@ -31,7 +31,11 @@
             
 ## 4. Port mirror
 
-### 4.1 restart networkmanager
+### 4.1 go to network-scripts
+
+    cd /etc/sysconfig/network-scripts/
+
+### 4.2 restart networkmanager
 
     nmcli connection add type ethernet ifname eno4 con-name eno4 autoconnect no
     
@@ -42,9 +46,8 @@
     nmcli connection modify eno4 +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
 
     nmcli connection eno4 on
-
     
-### 4.2 restart the interface to reload settings
+### 4.3 restart the interface to reload settings
 
     nmcli connection down ens192; nmcli connection up ens192
     
