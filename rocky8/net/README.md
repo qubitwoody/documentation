@@ -35,7 +35,6 @@
     
     PROMISC=yes
 
-
 ## 4. Port mirror
 
 ### 4.1 go to network-scripts
