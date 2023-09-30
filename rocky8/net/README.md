@@ -29,6 +29,13 @@
     
     ifconfig eno4 -promisc
             
+### 3.2 promisc on after reboot
+
+    vi ifcfg-brm
+    
+    PROMISC=yes
+
+
 ## 4. Port mirror
 
 ### 4.1 go to network-scripts
@@ -37,15 +44,17 @@
 
 ### 4.2 restart networkmanager
 
-    nmcli connection add type ethernet ifname eno4 con-name eno4 autoconnect no
+    nmcli connection add type ethernet ifname eno4 con-name brm0 autoconnect no
     
-    nmcli connection modify eno4 +tc.qdisc "root prio handle 10:"
-    nmcli connection modify eno4 +tc.qdisc "ingress handle ffff:"
+    nmcli connection modify brm0 +tc.qdisc "root prio handle 10:"
+    nmcli connection modify brm0 +tc.qdisc "ingress handle ffff:"
 
-    nmcli connection modify eno4 +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
-    nmcli connection modify eno4 +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
+    nmcli connection modify brm0 +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
+    nmcli connection modify brm0 +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
 
-    nmcli connection eno4 on
+    nmcli connection brm0 down && nmcli connection brm0 up
+
+    ifconfig brm promisc
     
 ### 4.3 restart the interface to reload settings
 
