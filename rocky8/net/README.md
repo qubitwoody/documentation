@@ -41,27 +41,36 @@
 
     cd /etc/sysconfig/network-scripts/
 
-### 4.2 restart networkmanager
+### 4.2 config for mirror from bridge brm0 to vm network vnet1 and vnet3
 
-    nmcli connection add type ethernet ifname eno4 con-name brm0 autoconnect no
+    tc qdisc add dev brm0 ingress
     
-    nmcli connection modify brm0 +tc.qdisc "root prio handle 10:"
-    nmcli connection modify brm0 +tc.qdisc "ingress handle ffff:"
+    tc filter add dev brm0 parent ffff: \
+    protocol ip u32 match u8 0 0 \
+    action mirred egress mirror dev vnet1 pipe \
+    action mirred egress mirror dev vnet3
 
-    nmcli connection modify brm0 +tc.tfilter "parent ffff: matchall action mirred egress mirror dev vnet1"
-    nmcli connection modify brm0 +tc.tfilter "parent 10: matchall action mirred egress mirror dev vnet1"
+    tc qdisc replace dev brm0 parent root prio
 
-    nmcli connection brm0 down && nmcli connection brm0 up
+### 4.3 if prio == 8005 then
 
-    ifconfig brm promisc
+    tc qdisc show dev brm0
+
+    tc filter add dev brm0 parent 8005: \
+    protocol ip u32 match u8 0 0 \
+    action mirred egress mirror dev vnet1 pipe \
+    action mirred egress mirror dev vnet3
     
-### 4.3 restart the interface to reload settings
+## 5. Commands
+
+### 5.1 restart the interface to reload settings
 
     nmcli connection down ens192; nmcli connection up ens192
     
     nmcli connection down ens224; nmcli connection up ens224 nmcli connection modify br0 ipv6.method "disabled"
 
 ## X. Useful Links
+- http://geertj.blogspot.com/2010/12/network-security-monitoring-with-kvm.html
 - https://www.golinuxcloud.com/nmcli-command-examples-cheatsheet-centos-rhel/
 - https://www.server-world.info/en/note?os=Rocky_Linux_8&p=initial_conf&f=3
 - https://www.server-world.info/en/note?os=CentOS_Stream_8&p=bonding
