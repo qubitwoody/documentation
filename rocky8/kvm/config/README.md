@@ -9,8 +9,12 @@
 
     vi /etc/libvirt/qemu/010013-centos7d-temp.xml
     
+    <interface type='bridge'>
+    ...
     <source network='default'/>
     <target dev='vnet1'/>
+    ...
+    </interface>
 
     systemctl restart libvirtd
 
