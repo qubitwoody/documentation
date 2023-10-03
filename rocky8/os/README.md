@@ -13,12 +13,20 @@ rocky8
 
     reboot
 
-### 0.2 Proxy
+### 0.2.1 Proxy
 
     vi /etc/profile.d/pproxy.sh 
     
     export http_proxy=http://172.16.10.20:3128
     export https_proxy=http://172.16.10.20:3128
+    export no_proxy=localhost,127.0.0.1
+
+### 0.2.2 Proxy
+
+    vi /etc/profile.d/pproxy.sh 
+    
+    export http_proxy=http://10.10.10.180:3128
+    export https_proxy=http://10.10.10.180:3128
     export no_proxy=localhost,127.0.0.1
 
 ### 0.3 cockpit
