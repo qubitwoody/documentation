@@ -56,8 +56,10 @@ rocky8
 ### 1.0 packages
 
     dnf -y install wget net-tools telnet bind-utils zip unzip tar tcpdump lsof nc chrony
+
+    dnf -y install epel-release
     
-    dnf -y install policycoreutils-python-utils epel-release
+    dnf -y install policycoreutils-python-utils
 
 ### 1.1 Chrony
 
