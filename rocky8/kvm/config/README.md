@@ -1,3 +1,3 @@
 ## 1. Virtual Network Interface
 
-https://github.com/QubitSecurity/documentation/issues/1#issue-1923280679
+![rtaImage](https://github.com/QubitSecurity/documentation/assets/24949168/f61fbc97-56c4-4d7a-96ae-1e345c115407)
