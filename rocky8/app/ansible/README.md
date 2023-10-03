@@ -33,4 +33,6 @@ chrony conf
             src=/home/admin/ansible/dl/chrony.conf
             dest=/etc/chrony.conf
             
+### 3.3 Run
 
+    ansible-playbook -i ~/ansible/hosts pb_copy_chrony.yml
