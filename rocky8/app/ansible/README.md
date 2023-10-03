@@ -19,13 +19,13 @@ chrony conf
 
 ### 3.1
 
-    ansible -i ~/ansible/hosts all -m ping   
+    ansible -i ~/ansible/hosts all-hosts -m ping   
 
 ### 3.2 Copy for NTP
 
     vi ~ansible/pb_copy_chrony.yml
     
-    - hosts: all-haproxy
+    - hosts: all-hosts
       user: admin
       sudo: yes
       tasks:
