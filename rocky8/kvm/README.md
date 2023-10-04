@@ -58,7 +58,7 @@ libvirtd
     
     systemctl restart libvirtd
     
-    virt-clone --original 24GBMSA --name 24GBMSA-zabbix --file /var/lib/libvirt/images/24GBMSA-zabbix.qcow2
+    virt-clone --original rocky8 --name rocky8-zabbix --file /var/lib/libvirt/images/rocky8-zabbix.qcow2
 
 ### 2.3 copy all
 
@@ -70,7 +70,7 @@ libvirtd
 
 ### 3.1 resize
 
-    qemu-img resize /var/lib/libvirt/images/24GBMSA.qcow2 +100G
+    qemu-img resize /var/lib/libvirt/images/rocky8.qcow2 +100G
 
 
 ## X. Useful Links
