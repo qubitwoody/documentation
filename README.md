@@ -24,10 +24,6 @@
 
 #### 3.2.4 remmina
 
-#### 3.2.5 tigervnc
-
-#### 3.2.6 wireshark
-
 ## X. Download
 
 - http://mirror.navercorp.com/rocky/
