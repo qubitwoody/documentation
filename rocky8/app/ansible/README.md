@@ -26,12 +26,12 @@ chrony conf
     vi ~ansible/pb_copy_chrony.yml
     
     - hosts: all-hosts
-      user: admin
-      sudo: yes
-      tasks:
-        - copy:
+      - copy:
             src=/home/admin/ansible/dl/chrony.conf
             dest=/etc/chrony.conf
+            remote_src: true
+      become: true
+      become_user: root
             
 ### 3.3 Run
 
