@@ -48,7 +48,7 @@ libvirtd
 
 ### 2.1 clone
 
-    virt-clone --original 24GBMSA --name 24GBMSA-zabbix --file /var/lib/libvirt/images/24GBMSA-zabbix.qcow2
+    virt-clone --original rocky8 --name rocky8-zabbix --file /var/lib/libvirt/images/rocky8-zabbix.qcow2
     
 ### 2.2 copy
 
@@ -57,8 +57,6 @@ libvirtd
     scp /var/lib/libvirt/images/24GBMSA.qcow2 root@10.10.10.11:/var/lib/libvirt/images/
     
     systemctl restart libvirtd
-    
-    virt-clone --original rocky8 --name rocky8-zabbix --file /var/lib/libvirt/images/rocky8-zabbix.qcow2
 
 ### 2.3 copy all
 
