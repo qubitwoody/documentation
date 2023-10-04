@@ -17,7 +17,7 @@ chrony conf
 
 ## 3. Basic commands
 
-### 3.1
+### 3.1 ping
 
     ansible -i ~/ansible/hosts all-hosts -m ping   
 
@@ -38,3 +38,7 @@ chrony conf
 ### 3.3 Run
 
     ansible-playbook -i ~/ansible/hosts pb_copy_chrony.yml
+
+### 3.4 Check
+
+    ansible -i ansible/hosts all-hosts -m shell -a "sudo systemctl restart chronyd"
