@@ -41,4 +41,4 @@ chrony conf
 
 ### 3.4 Check
 
-    ansible -i ansible/hosts all-hosts -m shell -a "sudo systemctl restart chronyd"
+    ansible -i ~/ansible/hosts all-hosts -m shell -a "sudo systemctl restart chronyd"
