@@ -26,13 +26,15 @@ chrony conf
     vi ~ansible/pb_copy_chrony.yml
     
     - hosts: all-hosts
-      - copy:
-            src=/home/admin/ansible/dl/chrony.conf
-            dest=/etc/chrony.conf
-            remote_src: true
       become: true
       become_user: root
-            
+      tasks:
+        - copy:
+            src=/home/admin/ansible/dl/chrony.conf
+            dest=/etc/chrony.conf
+            remote_src: no
+            mode: 0644
+
 ### 3.3 Run
 
     ansible-playbook -i ~/ansible/hosts pb_copy_chrony.yml
