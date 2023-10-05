@@ -17,13 +17,21 @@ libvirtd
     
     cd /var/lib/libvirt/images/
 
-### 1.3 Install required packages.
+### 1.3 Install kvm manager packages
 
     dnf -y install virt-manager
     
     systemctl restart libvirtd
 
-### 1.4 Basic command
+### 1.4 Install cockpit packages
+
+    dnf -y install cockpit-machines
+
+    dnf -y install virt-viewer
+    
+    systemctl restart libvirtd
+
+### 1.5 Basic command
 
     virsh --help
     
