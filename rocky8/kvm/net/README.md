@@ -1,12 +1,12 @@
 # Network
 
-## 4. Port mirror
+## 1. Port mirror
 
-### 4.1 go to network-scripts
+### 1.1 go to network-scripts
 
     cd /etc/sysconfig/network-scripts/
 
-### 4.2 config for mirror from bridge brm0 to vm network vnet1 and vnet3
+### 1.2 config for mirror from bridge brm0 to vm network vnet1 and vnet3
 
     tc qdisc add dev brm0 ingress
     
@@ -17,7 +17,7 @@
 
     tc qdisc replace dev brm0 parent root prio
 
-### 4.3 if prio == 8005 then
+### 1.3 if prio == 8005 then
 
     tc qdisc show dev brm0
 
@@ -26,9 +26,17 @@
     action mirred egress mirror dev vnet1 pipe \
     action mirred egress mirror dev vnet3
     
-## 5. Commands
+## 2. Check
 
-### 5.1 restart the interface to reload settings
+### 2.1 brm0 interface is promisc
+
+    ifconfig brm0 promisc
+    
+    ifconfig brm0 -promisc
+
+## 3. Commands
+
+### 3.1 restart the interface to reload settings
 
     nmcli connection down ens192; nmcli connection up ens192
     
