@@ -84,3 +84,4 @@ libvirtd
 - https://www.cyberciti.biz/faq/howto-linux-delete-a-running-vm-guest-on-kvm/
 - https://www.cyberciti.biz/faq/how-to-forcefully-shutdown-forcing-a-guest-to-stop-using-virsh-command/
 - https://access.redhat.com/solutions/6967304
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/configuring_and_managing_virtualization/index#setting-up-the-rhel-web-console-to-manage-vms_managing-virtual-machines-in-the-web-console
