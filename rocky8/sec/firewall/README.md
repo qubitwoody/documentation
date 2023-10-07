@@ -1,13 +1,27 @@
 # firewall-cmd
 
-### 2.1 basic
+## 1. Basic
+### 1.1 basic
 
     firewall-cmd --get-default-zone
     
     firewall-cmd --get-active-zones
 
+### 1.2 basic
 
-### 2.2 all
+    firewall-cmd --get-default-zone
+    
+    firewall-cmd --get-active-zones
+
+### 1.3 specific public to add interface
+
+    firewall-cmd --zone=public --list-all
+    
+    firewall-cmd --permanent --zone=public --add-interface=ens224
+    
+    firewall-cmd --reload
+
+### 1.4 add service and port
 
     firewall-cmd --add-service=snmp --permanent
     
@@ -15,13 +29,13 @@
     
     firewall-cmd --reload
     
-### 2.3 specific public zone
+### 1.5 add source ip address
 
-    firewall-cmd --zone=public --list-all
-    
-    firewall-cmd --permanent --zone=public --add-interface=ens224
+    firewall-cmd --zone=public --permanent --add-source=1.1.1.1/32
     
     firewall-cmd --reload
+
+## 2. Rich rules
 
 ### 2.3.1 add rich rule
 
