@@ -123,9 +123,29 @@
 ### 3.2  Do not use the explicit-exit-notify option
 
     ;explicit-exit-notify 1
+        
+## 4. Delete users
+
+### 4.1 cd
+
+    cd /usr/share/easy-rsa/3
+
+### 4.2 Check users
+
+    ll /usr/share/easy-rsa/3/pki/issued/
+
+### 4.3 Revoke and restart
+
+    ./easyrsa revoke
+
+    ./easyrsa gen-crl
+
+    systemctl restart openvpn-server@server
 
 ## X. Useful Links
 
     https://www.server-world.info/en/note?os=Rocky_Linux_8&p=openvpn&f=1
     https://suay.site/?p=1828
     https://openvpn.net/community-downloads/
+
+    https://dejavuqa.tistory.com/249
