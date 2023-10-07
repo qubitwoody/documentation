@@ -10,9 +10,9 @@
             
 ### 1.2 
 
-    vi
+    vi /etc/selinux/config
     
-
+    SELINUX=enforcing
     
 ## X Useful Links
 
