@@ -38,3 +38,8 @@ OPEN JDK
 ### 3.1 Remove jdk-8
 
     dnf remove java-1.8.0-openjdk java-1.8.0-openjdk-devel java-1.8.0-openjdk-headless
+
+## X. Useful Links
+
+    https://www.server-world.info/en/note?os=CentOS_Stream_8&p=java&f=1
+    https://www.server-world.info/en/note?os=CentOS_Stream_8&p=java&f=2
