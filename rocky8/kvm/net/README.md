@@ -49,3 +49,5 @@
 ## X. Useful Links
 - http://geertj.blogspot.com/2010/12/network-security-monitoring-with-kvm.html
 - https://www.golinuxcloud.com/nmcli-command-examples-cheatsheet-centos-rhel/
+
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/linux-traffic-control_configuring-and-managing-networking
