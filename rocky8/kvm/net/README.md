@@ -34,6 +34,10 @@
     
     ifconfig brm0 -promisc
 
+### 2.2 brm0 interface error
+
+    tc -s qdisc show dev brm0
+
 ## 3. Commands
 
 ### 3.1 restart the interface to reload settings
