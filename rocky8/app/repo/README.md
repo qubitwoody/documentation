@@ -35,9 +35,17 @@ for local
 
 ### 1.5 setting rules to firewalld
 
-    firewall-cmd --add-service=ntp --permanent
+    firewall-cmd --add-service=httpd --permanent
     
     firewall-cmd --reload
+
+### 1.6 testing
+
+    dnf repolist
+
+    dnf module list
+
+dnf module list
 
 ## 2. EPEL
 
@@ -54,6 +62,11 @@ for local
 ### 2.3 create repodata
 
     createrepo /var/www/repos/rocky/epel/8/Everything/x86_64/
+
+
+### 2.4 testing
+
+    dnf list xrdp
 
 ## 3. not install only download
 
