@@ -29,6 +29,14 @@ for local
     
     createrepo /var/www/repos/rocky/8/x86_64/os/extras/
 
+### 1.5 update repodata
+
+    createrepo --update /var/www/repos/rocky/8/x86_64/os/appstream/
+    
+    createrepo --update /var/www/repos/rocky/8/x86_64/os/baseos/
+    
+    createrepo --update /var/www/repos/rocky/8/x86_64/os/extras/
+
 ### 1.4 selinux
 
     restorecon -r /var/www/repos/
@@ -63,6 +71,9 @@ dnf module list
 
     createrepo /var/www/repos/rocky/epel/8/Everything/x86_64/
 
+### 2.4 update repodata
+
+    createrepo --update /var/www/repos/rocky/epel/8/Everything/x86_64/
 
 ### 2.4 testing
 
