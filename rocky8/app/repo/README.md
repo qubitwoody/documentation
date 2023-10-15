@@ -29,7 +29,6 @@ for local
     
     createrepo /var/www/repos/rocky/8/x86_64/os/extras/
 
-
 ### 1.4 selinux
 
     restorecon -r /var/www/repos/
@@ -40,3 +39,33 @@ for local
     
     firewall-cmd --reload
 
+## 2. EPEL
+
+### 2.1 Create directories for repository
+
+    mkdir -p /var/www/repos/rocky/epel/8/Everything/x86_64/
+    
+    chmod -R 755 /var/www/repos
+
+### 2.2 copy from official repository
+
+    reposync -p /var/www/repos/rocky/epel/8/Everything/x86_64/ --repo=epel --download-metadata
+    
+### 2.3 create repodata
+
+    createrepo /var/www/repos/rocky/epel/8/Everything/x86_64/
+
+## 3. not install only download
+
+### 3.1 create repodata
+
+    dnf download nfs-utils
+
+### 3.2 make directory
+
+    mkdir ~/packages
+
+### 3.3 examples
+    
+    dnf install httpd --downloadonly --downloaddir ~/packages/
+    dnf install nfs-utils --downloadonly --downloaddir ~/packages/
