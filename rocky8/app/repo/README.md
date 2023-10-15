@@ -91,5 +91,4 @@ dnf module list
 
 ### 3.3 examples
     
-    dnf install httpd --downloadonly --downloaddir ~/packages/
-    dnf install nfs-utils --downloadonly --downloaddir ~/packages/
+    yumdownloader nfs-utils --downloadonly --resolve --downloaddir=~/packages/
