@@ -91,4 +91,4 @@ dnf module list
 
 ### 3.3 examples
     
-    yumdownloader nfs-utils --downloadonly --resolve --downloaddir=~/packages/
+    yumdownloader nfs-utils --downloadonly --resolve --downloaddir ~/packages/
