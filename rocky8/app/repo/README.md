@@ -12,9 +12,6 @@ for local
     mkdir -p /var/www/repos/rocky/8/x86_64/os
     
     chmod -R 755 /var/www/repos
-    allow 10.10.10.0/23
-    
-    systemctl enable --now chronyd
 
 ### 1.3 copy from official repository
 
