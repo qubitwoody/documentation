@@ -53,8 +53,6 @@ for local
 
     dnf module list
 
-dnf module list
-
 ## 2. EPEL
 
 ### 2.1 Create directories for repository
@@ -79,7 +77,7 @@ dnf module list
 
     dnf list xrdp
 
-## 3. not install only download
+## 3. dnf localinstall
 
 ### 3.1 create repodata
 
