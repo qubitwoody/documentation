@@ -21,6 +21,15 @@ for local
     
     reposync -p /var/www/repos/rocky/8/x86_64/os/ --repo=extras --download-metadata
     
+### 1.4 create repodata
+
+    createrepo /var/www/repos/rocky/8/x86_64/os/appstream/
+    
+    createrepo /var/www/repos/rocky/8/x86_64/os/baseos/
+    
+    createrepo /var/www/repos/rocky/8/x86_64/os/extras/
+
+
 ### 1.4 selinux
 
     restorecon -r /var/www/repos/
