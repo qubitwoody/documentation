@@ -5,27 +5,30 @@ for local
 
 ### 1.1 Install
 
-    dnf -y install yum-utils
+    dnf -y install yum-utils createrepo
             
-### 1.2 Edit for chrony
+### 1.2 Create directories for repository
 
-    vi /etc/chrony.conf 
+    mkdir -p /var/www/repos/rocky/8/x86_64/os
     
-    server 172.16.10.250 iburst
+    chmod -R 755 /var/www/repos
     allow 10.10.10.0/23
     
     systemctl enable --now chronyd
 
-### 1.3 Testing
+### 1.3 copy from official repository
 
-    chronyc sources
+    reposync -p /var/www/repos/rocky/8/x86_64/os/ --repo=baseos --download-metadata
     
-    dnf -y install ntpstat
+    reposync -p /var/www/repos/rocky/8/x86_64/os/ --repo=appstream --download-metadata
     
-    ntpstat
+    reposync -p /var/www/repos/rocky/8/x86_64/os/ --repo=extras --download-metadata
     
+### 1.4 selinux
 
-### 1.4 setting rules to firewalld
+    restorecon -r /var/www/repos/
+
+### 1.5 setting rules to firewalld
 
     firewall-cmd --add-service=ntp --permanent
     
