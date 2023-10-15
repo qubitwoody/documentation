@@ -83,7 +83,7 @@ dnf module list
 
 ### 3.1 create repodata
 
-    dnf download nfs-utils
+    dnf download yum-utils
 
 ### 3.2 make directory
 
