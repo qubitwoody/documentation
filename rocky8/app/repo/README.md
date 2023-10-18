@@ -96,5 +96,37 @@ for local
     yumdownloader remmina --downloadonly --resolve --downloaddir ~/packages/remmina
 
 ### 3.5 install with remmina
-    
-    dnf localinstall avahi-ui-gtk3-0.7-20.el8.x86_64.rpm libappindicator-gtk3-12.10.0-19.el8.x86_64.rpm libdbusmenu-16.04.0-12.el8.x86_64.rpm libdbusmenu-gtk3-16.04.0-12.el8.x86_64.rpm libindicator-gtk3-12.10.1-14.el8.x86_64.rpm libsodium-1.0.18-2.el8.x86_64.rpm remmina-1.4.32-1.el8.x86_64.rpm remmina-plugins-exec-1.4.32-1.el8.x86_64.rpm remmina-plugins-rdp-1.4.32-1.el8.x86_64.rpm remmina-plugins-secret-1.4.32-1.el8.x86_64.rpm remmina-plugins-vnc-1.4.32-1.el8.x86_64.rpm
+
+<hr/>
+
+## 4. YUM for CentOS 7
+
+    mkdir -p /var/www/repos/centos/7/os/x86_64/
+    chmod -R 755 /var/www/repos
+
+    reposync -p /var/www/repos/centos/7/os/x86_64/ --repo=base --download-metadata
+    reposync -p /var/www/repos/centos/7/updates/x86_64/ --repo=updates --download-metadata
+    reposync -p /var/www/repos/centos/7/extras/x86_64/ --repo=extras --download-metadata
+
+    reposync -p /var/www/repos/centos/7/centosplus/x86_64/ --repo=centosplus --download-metadata
+
+    mkdir -p /var/www/repos/epel/7/os/x86_64/
+    chmod -R 755 /var/www/repos
+
+    reposync -p /var/www/repos/epel/7/os/x86_64/ --repo=epel --download-metadata
+    reposync -p /var/www/repos/ --repo=epel --download-metadata
+    reposync -p /var/www/repos/ --newest-only --repo=epel --download-metadata
+
+    createrepo /var/www/repos/centos/7/os/x86_64/
+    createrepo /var/www/repos/centos/7/updates/x86_64/
+    createrepo /var/www/repos/centos/7/extras/x86_64/
+    createrepo /var/www/repos/centos/7/centosplus/x86_64/
+
+    createrepo --update /var/www/repos/centos/7/os/x86_64/
+    createrepo --update /var/www/repos/centos/7/updates/x86_64/
+    createrepo --update /var/www/repos/centos/7/extras/x86_64/
+    createrepo --update /var/www/repos/centos/7/centosplus/x86_64/
+
+    createrepo /var/www/repos/epel/
+    createrepo /var/www/repos/epel
+    createrepo --update /var/www/repos/epel
