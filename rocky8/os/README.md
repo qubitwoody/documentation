@@ -194,11 +194,17 @@ rocky8
     
     ssh-copy-id root@10.0.0.51
 
-## X.0 OS Download
+## X.1 OS Download
 
 - https://mirror.navercorp.com/rocky/8/isos/x86_64/
 
-## X. Useful Links
+## X.2 Add new dsik
+
+- https://blog.naver.com/romanst/220547472292
+- https://mapoo.net/os/oslinux/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-gnu-parted%EB%A1%9C-4k-%EC%84%B9%ED%84%B0-%EB%94%94%EC%8A%A4%ED%81%AC-%ED%8C%8C%ED%8B%B0%EC%85%98-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/
+- https://phoenixnap.com/kb/linux-format-disk
+
+## X.3 Useful Links
 
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/configuring-the-web-console-listening-port_system-management-using-the-rhel-8-web-console
     
